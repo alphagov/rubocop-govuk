@@ -1,1 +1,5 @@
 inherit_from: ./config/all.yml
+
+AllCops:
+  Exclude:
+    - tmp/**/*
