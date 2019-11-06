@@ -11,12 +11,9 @@ AllCops:
     Description: 'Display style guide URLs in offense messages.'
     Enabled: true
 
-require: rubocop-rails
-
 inherit_from:
   - gds-ruby-styleguide.yml
   - other-lint.yml
-  - other-rails.yml
   - other-style.yml
   - other-metrics.yml
   - other-excludes.yml

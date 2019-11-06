@@ -2,8 +2,11 @@
 
 # By default Rails is switched off so this can be used by non-Rails apps,
 # this can be enabled in a local .rubocop.yml file
+
+require: rubocop-rails
+
 Rails:
-  Enabled: false
+  Enabled: true
 
 Rails/ActionFilter:
   Description: 'Enforces consistent use of action filter methods.'

@@ -1,3 +1,7 @@
+# Unreleased
+
+* Allow importing of Ruby and Rails rules seperately
+
 # 0.2.0
 
 * Disable the Style/FormatStringToken cop
