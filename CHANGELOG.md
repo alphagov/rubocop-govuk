@@ -1,4 +1,4 @@
-# Unreleased
+# 1.0.0
 
 * Allow importing of Ruby and Rails rules seperately
 
