@@ -1,4 +1,6 @@
-inherit_from: ./config/all.yml
+inherit_from:
+  - ./config/default.yml
+  - ./config/rails.yml
 
 AllCops:
   Exclude:
