@@ -5,14 +5,16 @@ This repository provides common RuboCop rules for use with GOV.UK Ruby projects 
 ## Installation
 
 Add `rubocop-govuk` to your Gemfile and then run `bundle install`:
+
 ```ruby
 # Gemfile
 gem 'rubocop-govuk'
 ```
 
 Inherit rules from the gem by adding the following to your project's RuboCop config:
+
 ```yaml
-# .rubocop
+# .rubocop.yml
 inherit_gem:
   rubocop-govuk: 
     - config/default.yml
@@ -21,7 +23,7 @@ inherit_gem:
 or if you also need Rails specific rules:
 
 ```yaml
-# .rubocop
+# .rubocop.yml
 inherit_gem:
   rubocop-govuk: 
     - config/default.yml
