@@ -114,7 +114,7 @@ Layout/TrailingWhitespace:
   Enabled: true
 
 # Supports --auto-correct
-Layout/TrailingBlankLines:
+Layout/TrailingEmptyLines:
   Description: Checks trailing blank lines and final newline.
   Enabled: true
   EnforcedStyle: final_newline
@@ -245,7 +245,7 @@ Style/TrivialAccessors:
   ExactNameMatch: true
   AllowPredicates: true
   AllowDSLWriters: false
-  Whitelist:
+  AllowedMethod:
   - to_ary
   - to_a
   - to_c
@@ -282,7 +282,7 @@ Lint/RescueException:
 ## Collections
 
 # Supports --auto-correct
-Layout/AlignArray:
+Layout/ArrayAlignment:
   Description: Align the elements of an array literal if they span more than one line.
   Enabled: true
 
@@ -323,7 +323,7 @@ Layout/MultilineMethodCallIndentation:
 ## Strings
 
 # Supports --auto-correct
-Lint/StringConversionInInterpolation:
+Lint/RedundantStringCoercion:
   Description: Checks for Object#to_s usage in string interpolation.
   Enabled: true
 
