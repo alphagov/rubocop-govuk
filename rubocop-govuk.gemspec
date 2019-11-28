@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = Dir["config/**/*", "*.md"]
 
-  spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "rake", "~> 13.0"
 
   spec.add_dependency "rubocop", "0.77"
   spec.add_dependency "rubocop-rails", "~> 2"
