@@ -1,3 +1,8 @@
+# 2.0.0
+
+* Use specific version for RuboCop
+* Update RuboCop to 0.77
+
 # 1.0.0
 
 * Allow importing of Ruby and Rails rules seperately

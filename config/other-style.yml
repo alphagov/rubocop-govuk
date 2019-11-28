@@ -11,13 +11,13 @@ Style/Alias:
   Description: 'Use alias_method instead of alias.'
   Enabled: false
 
-Layout/AlignHash:
+Layout/HashAlignment:
   Description: >-
     Align the elements of a hash literal if they span more than
     one line.
   Enabled: false
 
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Description: >-
     Align the parameters of a method call if they span more
     than one line.
@@ -168,13 +168,13 @@ Style/IfWithSemicolon:
   Description: 'Never use if x; .... Use the ternary operator instead.'
   Enabled: false
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   Description: >-
     Checks the indentation of the first element in an array
     literal.
   Enabled: false
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   Description: 'Checks the indentation of the first key in a hash literal.'
   Enabled: false
 

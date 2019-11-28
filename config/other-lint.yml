@@ -46,7 +46,7 @@ Security/Eval:
   Description: 'The use of eval represents a serious security risk.'
   Enabled: true
 
-Lint/HandleExceptions:
+Lint/SuppressedException:
   Description: "Don't suppress exception."
   Enabled: true
 
