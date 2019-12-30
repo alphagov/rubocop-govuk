@@ -245,7 +245,7 @@ Style/TrivialAccessors:
   ExactNameMatch: true
   AllowPredicates: true
   AllowDSLWriters: false
-  AllowedMethod:
+  AllowedMethods:
   - to_ary
   - to_a
   - to_c
