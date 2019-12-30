@@ -55,7 +55,7 @@ Layout/IndentationConsistency:
   Description: Keep indentation straight.
   Enabled: true
 
-Metrics/LineLength:
+Layout/LineLength:
   Description: Limit lines to 80 characters.
   Enabled: false
   Max: 80
