@@ -1,3 +1,7 @@
+# Unreleased
+
+* Update Rubocop to 0.78
+
 # 2.0.0
 
 * Use specific version for RuboCop
