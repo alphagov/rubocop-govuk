@@ -1,6 +1,6 @@
 # Unreleased
 
-* Update Rubocop to 0.78
+* Update Rubocop to 0.79
 
 # 2.0.0
 
