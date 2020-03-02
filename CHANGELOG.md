@@ -1,6 +1,7 @@
 # Unreleased
 
 * Update Rubocop to 0.79
+* Exclude `bin` directory and `db/schema.rb` from linter checks
 
 # 2.0.0
 

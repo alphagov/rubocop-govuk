@@ -1,4 +1,7 @@
 AllCops:
+  Excludes:
+    - 'bin/**'
+
   DisplayCopNames:
     Description: 'Display cop names in offense messages'
     Enabled: true
