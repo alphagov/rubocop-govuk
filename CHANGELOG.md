@@ -1,7 +1,9 @@
-# Unreleased
+# 3.0.0
 
-* Update Rubocop to 0.79
-* Exclude `bin` directory and `db/schema.rb` from linter checks
+* Update Rubocop to 0.80.1
+  * This deletes the Style/BracesAroundHashParameters cop for future
+    Ruby 3 compatibility.
+* Exclude `bin` directory and `db/schema.rb` from linter checks (#14)
 
 # 2.0.0
 
