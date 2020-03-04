@@ -1,6 +1,7 @@
 AllCops:
   Exclude:
     - 'bin/**'
+    - 'config.ru'
 
   DisplayCopNames:
     Description: 'Display cop names in offense messages'

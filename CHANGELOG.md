@@ -1,6 +1,7 @@
 # Unreleased
 
 * Fix deprecation warning for AllCops/Excludes => AllCops/Exclude (#17)
+* Exclude `config.ru` from linter checks (#18)
 
 # 3.0.0
 
