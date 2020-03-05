@@ -1,3 +1,7 @@
+# Unreleased
+
+* Fix deprecation warning for AllCops/Excludes => AllCops/Exclude (#17)
+
 # 3.0.0
 
 * Update Rubocop to 0.80.1
