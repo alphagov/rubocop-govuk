@@ -1,4 +1,4 @@
-# Unreleased
+# 3.3.0
 
 * Exclude Rails migrations from linting checks (#25)
 
