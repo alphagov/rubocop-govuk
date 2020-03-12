@@ -1,3 +1,7 @@
+# Unreleased
+
+* Exclude `tmp` directory from linting checks
+
 # 3.1.0
 
 * Fix deprecation warning for AllCops/Excludes => AllCops/Exclude (#17)
