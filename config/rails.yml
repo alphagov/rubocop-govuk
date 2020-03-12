@@ -8,6 +8,7 @@ require: rubocop-rails
 AllCops:
   Exclude:
     - 'db/schema.rb'
+    - 'db/migrate/201*'
 
 Rails:
   Enabled: true

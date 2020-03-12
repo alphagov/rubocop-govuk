@@ -1,3 +1,7 @@
+# Unreleased
+
+* Exclude Rails migrations from linting checks (#25)
+
 # 3.2.0
 
 * Configure new cops about hash styles (#24)
