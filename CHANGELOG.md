@@ -1,5 +1,6 @@
 # Unreleased
 
+* Configure new cops about hash styles
 * Exclude `tmp` directory from linting checks
 
 # 3.1.0
