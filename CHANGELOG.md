@@ -1,3 +1,7 @@
+# 3.3.1
+
+* Exclude two unsafe style cops (#27)
+
 # 3.3.0
 
 * Exclude Rails migrations from linting checks (#25)
