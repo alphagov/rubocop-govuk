@@ -1,3 +1,7 @@
+# 3.3.2
+
+* Exclude /tmp directory (#29)
+
 # 3.3.1
 
 * Exclude two unsafe style cops (#27)
