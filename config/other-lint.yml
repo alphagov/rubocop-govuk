@@ -34,7 +34,7 @@ Lint/EmptyInterpolation:
   Description: 'Checks for empty string interpolation.'
   Enabled: true
 
-Lint/EndInMethod:
+Lint/EndBlock:
   Description: 'END blocks should not be placed inside method definitions.'
   Enabled: true
 
