@@ -22,3 +22,4 @@ inherit_from:
   - other-style.yml
   - other-metrics.yml
   - other-excludes.yml
+  - rake.yml
