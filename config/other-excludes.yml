@@ -14,10 +14,3 @@ Bundler/DuplicatedGem:
 
 Style/FormatStringToken:
   Enabled: false
-
-# These can result in false positives
-Style/HashTransformKeys:
-  Enabled: false
-
-Style/HashTransformValues:
-  Enabled: false
