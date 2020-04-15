@@ -1,3 +1,8 @@
+# 3.4.0
+
+* Add rubocop-rake cops (#32)
+* Revert #27 (hash transform cops) (#31)
+
 # 3.3.2
 
 * Exclude /tmp directory (#29)
