@@ -1,3 +1,7 @@
+# 3.5.0
+
+* Disable pending cops by default (#37)
+
 # 3.4.0
 
 * Add rubocop-rake cops (#32)

@@ -104,7 +104,7 @@ Layout/SpaceInsideParens:
   Description: No spaces after ( or before ).
   Enabled: true
 
-Layout/Tab:
+Layout/IndentationStyle:
   Description: No hard tabs.
   Enabled: true
 
