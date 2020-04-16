@@ -34,10 +34,6 @@ Lint/EmptyInterpolation:
   Description: 'Checks for empty string interpolation.'
   Enabled: true
 
-Lint/EndBlock:
-  Description: 'END blocks should not be placed inside method definitions.'
-  Enabled: true
-
 Lint/EnsureReturn:
   Description: 'Never use return in an ensure block.'
   Enabled: true
