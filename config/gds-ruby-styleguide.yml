@@ -327,11 +327,10 @@ Lint/RedundantStringCoercion:
   Description: Checks for Object#to_s usage in string interpolation.
   Enabled: true
 
-# Supports --auto-correct
+# Previously we had inconsistent uses of quotes
+# between repos, between files, and often within
+# the same file. This is unnecessarily confusing
+# flexibility that we don't want to allow.
 Style/StringLiterals:
-  Description: Checks if uses of quotes match the configured preference.
   Enabled: true
   EnforcedStyle: double_quotes
-  SupportedStyles:
-  - single_quotes
-  - double_quotes

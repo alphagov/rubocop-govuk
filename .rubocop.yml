@@ -7,3 +7,6 @@ inherit_from:
 inherit_mode:
   merge:
     - Exclude
+
+Rails:
+  Enabled: false
