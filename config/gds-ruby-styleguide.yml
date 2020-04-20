@@ -2,243 +2,391 @@
 ## General
 ############
 
+# Part of the orignal GDS styleguide
+# "Use soft-tabs with a two-space indent."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/BlockAlignment:
   Description: 'Align block ends correctly.'
   Enabled: true
 
+# Part of the original GDS styleguide
+# "Indent when as deep as case."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/CaseIndentation:
   Description: Indentation of when in a case/when/[else/]end.
   Enabled: true
   EnforcedStyle: case
-  SupportedStyles:
-  - case
-  - end
   IndentOneStep: false
 
+# TODO: unclear why this is here!
+# https://github.com/alphagov/govuk-lint/pull/38
 Layout/ClosingParenthesisIndentation:
   Description: 'Checks the indentation of hanging closing parentheses.'
   Enabled: false
 
+# TODO: unclear why this is here!
+# TODO: remove, as enabled by default!
 Style/MutableConstant:
   Description: 'Freeze mutable objects assigned to constants.'
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Use soft-tabs with a two-space indent."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Lint/ElseLayout:
   Description: 'Check for odd code arrangement in an else block.'
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use empty lines between defs and to break up a method into logical paragraphs."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
 Layout/EmptyLineBetweenDefs:
   Description: Use empty lines between defs.
   Enabled: true
   AllowAdjacentOneLineDefs: false
 
+# Part of the orignal GDS styleguide
+# "Never leave trailing whitespace"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/EmptyLines:
   Description: "Don't use several empty lines in a row."
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Use soft-tabs with a two-space indent."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/EndAlignment:
   Description: 'Align ends correctly.'
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Never leave trailing whitespace"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/EndOfLine:
   Description: 'Use Unix-style line endings.'
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use soft-tabs with a two-space indent."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/IndentationWidth:
   Description: Use 2 spaces for indentation.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use soft-tabs with a two-space indent."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/IndentationConsistency:
   Description: Keep indentation straight.
   Enabled: true
 
+# https://github.com/alphagov/govuk-lint/pull/7
+# "There are occasions where following this rule forces you to make the
+# code less readable. This is particularly the case for tests where method
+# names form the test descriptions. Keeping test descriptions under a
+# certain length can force them to become cryptic."
 Layout/LineLength:
   Description: Limit lines to 80 characters.
   Enabled: false
-  Max: 80
 
- # Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use spaces around operators"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/SpaceAroundOperators:
   Description: Use spaces around operators.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use spaces [...] around {"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/SpaceBeforeBlockBraces:
   Description: Checks that the left block brace has or doesn't have space before it.
   Enabled: true
   EnforcedStyle: space
-  SupportedStyles:
-  - space
-  - no_space
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use spaces [...] after semicolons"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/SpaceAfterSemicolon:
   Description: Use spaces after semicolons.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use spaces [...] after colons"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/SpaceAfterColon:
   Description: Use spaces after colons.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use spaces [...] after commas"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/SpaceAfterComma:
   Description: Use spaces after commas.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "No spaces after [...] [ or before ]"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/SpaceInsideReferenceBrackets:
   Description: No spaces after array[ or before ].
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "No spaces after [...] [ or before [...] ]"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/SpaceInsideArrayLiteralBrackets:
   Description: No spaces after array = [ or before ].
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "No spaces after ( [...] or before [...] )"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/SpaceInsideParens:
   Description: No spaces after ( or before ).
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Use soft-tabs with a two-space indent."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/IndentationStyle:
   Description: No hard tabs.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Never leave trailing whitespace"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/TrailingWhitespace:
   Description: Avoid trailing whitespace.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Never leave trailing whitespace"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
 Layout/TrailingEmptyLines:
   Description: Checks trailing blank lines and final newline.
   Enabled: true
   EnforcedStyle: final_newline
-  SupportedStyles:
-  - final_newline
-  - final_blank_line
 
 ## Syntax
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Always use && and || for logic"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/AndOr:
   Description: Use &&/|| instead of and/or.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use def with parentheses when there are arguments"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/DefWithParentheses:
   Description: Use def with parentheses when there are arguments.
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Never use for"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/For:
   Description: Checks use of for or each in multiline loops.
   Enabled: true
   EnforcedStyle: each
-  SupportedStyles:
-  - for
-  - each
 
+# https://github.com/alphagov/govuk-lint/pull/36
+# "When we have sequence of if/unless statements,
+# some with multiple lines within the if statement
+# block and some with a single line, forcing the single
+# line statements to re-written makes it a harder
+# to follow the branching logic."
 Style/IfUnlessModifier:
   Description: Favor modifier if/unless usage when you have a single-line body.
   Enabled: false
 
+# Part of the orignal GDS styleguide
+# "Never chain do...end"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
 Style/MethodCalledOnDoEndBlock:
   Description: Avoid chaining a method call on a do...end block.
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Omit the parentheses when the method doesn’t accept any arguments"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
 Style/MethodCallWithoutArgsParentheses:
   Description: 'Do not use parentheses for method calls with no arguments.'
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Never chain do...end"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/MultilineBlockChain:
   Description: Avoid multi-line chains of blocks.
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Never use then for multi-line if/unless"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/MultilineIfThen:
   Description: Never use then for multi-line if/unless.
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Avoid the ternary operator [...]"
+# "However, do use the ternary operator [...]"
+# "for single line conditionals"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/MultilineTernaryOperator:
   Description: 'Avoid multi-line ?: (the ternary operator); use if/unless instead.'
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "ternary operators must not be nested"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/NestedTernaryOperator:
   Description: Use one expression per branch in a ternary operator.
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Avoid the ternary operator [...]
+# However, do use the ternary operator [...]
+# for single line conditionals"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/OneLineConditional:
   Description: Favor the ternary operator(?:) over if/then/else/end constructs.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Don’t use parentheses around the condition of an
+# if/unless/while unless the condition contains an assignment"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/ParenthesesAroundCondition:
   Description: Don't use parentheses around the condition of an if/unless/while.
   Enabled: true
   AllowSafeAssignment: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Avoid return where not required"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/RedundantReturn:
   Description: Don't use return where it's not required.
   Enabled: true
   AllowMultipleReturnValues: false
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Never put a space between a method name and the opening parenthesis"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Layout/SpaceAfterMethodName:
   Description: Never put a space between a method name and the opening parenthesis in
     a method definition.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use spaces around the = operator when assigning default values to method parameters"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Layout/SpaceAroundEqualsInParameterDefault:
   Description: Checks that the equals signs in parameter default assignments have or
     don't have surrounding space depending on configuration.
   Enabled: true
   EnforcedStyle: space
-  SupportedStyles:
-  - space
-  - no_space
 
+# Part of the orignal GDS styleguide
+# "Never use unless with else. Rewrite these with the positive case first"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Style/UnlessElse:
   Description: Never use unless with else. Rewrite these with the positive case first.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use _ for unused block parameters"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
 Lint/UnusedBlockArgument:
   Description: Checks for unused block arguments.
   Enabled: true
 
 ## Naming
 
+# Part of the orignal GDS styleguide
+# "Use CamelCase for classes and modules."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
 Naming/ClassAndModuleCamelCase:
   Description: Use CamelCase for classes and modules.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use def self.method to define singleton methods.
+# This makes the methods more resistant to refactoring changes."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#classes
+# TODO: remove, as enabled by default!
 Style/ClassMethods:
   Description: Use self when defining module/class methods.
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Avoid the usage of class (@@) variables"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#classes
+# TODO: remove, as enabled by default!
 Style/ClassVars:
   Description: Avoid the use of class variables.
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Use SCREAMING_SNAKE_CASE for other constants."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
 Naming/ConstantName:
   Description: Constants should use SCREAMING_SNAKE_CASE.
   Enabled: true
 
+# Part of the orignal GDS styleguide
+# "Use snake_case for methods and variables."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
 Naming/MethodName:
   Description: Use the configured style when naming methods.
   Enabled: true
   EnforcedStyle: snake_case
-  SupportedStyles:
-  - snake_case
-  - camelCase
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Avoid get/set method names: these are better
+# implemented using Ruby's assignment syntax sugar.
+# Use attr_reader, attr_writer, and attr_accessor
+# for simple instance variable accessors."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
 Style/TrivialAccessors:
   Description: Prefer attr_* methods to trivial readers/writers.
   Enabled: true
@@ -264,73 +412,95 @@ Style/TrivialAccessors:
   - to_s
   - to_sym
 
+# Part of the orignal GDS styleguide
+# "Use snake_case for methods and variables."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
 Naming/VariableName:
   Description: Use the configured style when naming variables.
   Enabled: true
   EnforcedStyle: snake_case
-  SupportedStyles:
-  - snake_case
-  - camelCase
 
 ## Exceptions
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Avoid rescuing the Exception class."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#exceptions
+# TODO: remove, as enabled by default!
 Lint/RescueException:
   Description: Avoid rescuing the Exception class.
   Enabled: true
 
 ## Collections
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Instead of wrapping a long list of array
+# elements to a newline, write one element per line.
+# This enhances readability and helps generate clearer diffs."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
+# TODO: remove, as enabled by default!
 Layout/ArrayAlignment:
   Description: Align the elements of an array literal if they span more than one line.
   Enabled: true
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Use Ruby 1.9 syntax for symbolic hash keys.
+# This includes method calls."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
 Style/HashSyntax:
-  Description: 'Prefer Ruby 1.9 hash syntax { a: 1, b: 2 } over 1.8 syntax { :a => 1,
-    :b => 2 }.'
-  Enabled: true
   Exclude:
   - 'db/schema.rb'
 
-  EnforcedStyle: ruby19
-  SupportedStyles:
-  - ruby19
-  - hash_rockets
-
+# Part of the orignal GDS styleguide
+# "Add a trailing comma to multi-line array [...]
+# for clearer diffs with less line noise."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
 Style/TrailingCommaInArrayLiteral:
-  Enabled: true
   EnforcedStyleForMultiline: comma
 
+# Part of the orignal GDS styleguide
+# "Add a trailing comma to multi-line hash definitions [...]
+# for clearer diffs with less line noise."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
 Style/TrailingCommaInHashLiteral:
-  Enabled: true
   EnforcedStyleForMultiline: comma
 
+# Part of the orignal GDS styleguide
+# "When long lists of method arguments require
+# breaking over multiple lines, break each successive
+# argument on a new line, including the first argument
+# and closing paren. The final argument should include
+# a trailing comma."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
 Style/TrailingCommaInArguments:
-  Enabled: true
   EnforcedStyleForMultiline: comma
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Prefer %w to the literal array syntax when you need
+# an array of strings."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
 Style/WordArray:
-  Description: Use %w or %W for arrays of words.
-  Enabled: true
   MinSize: 0
 
+# TODO: unclear why this is here!
+# https://github.com/alphagov/govuk-lint/commit/5e42ec5690e3d4cc8fff44d0b0268c8e581c423a
 Layout/MultilineMethodCallIndentation:
   Enabled: false
 
 ## Strings
 
-# Supports --auto-correct
+# Part of the orignal GDS styleguide
+# "Prefer string interpolation instead of string concatenation"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#strings
+# TODO: remove, as enabled by default!
 Lint/RedundantStringCoercion:
   Description: Checks for Object#to_s usage in string interpolation.
   Enabled: true
 
-# Previously we had inconsistent uses of quotes
-# between repos, between files, and often within
-# the same file. This is unnecessarily confusing
-# flexibility that we don't want to allow.
+# "Try not to mix up single-quoted and double-quoted
+# strings within a file: it can make the code harder to read.
+# Definitely don't mix up single-quoted and double-quoted
+# strings within a method. If in doubt, use double-quoted strings,
+# because you’ll probably need to use interpolation somewhere.
 Style/StringLiterals:
-  Enabled: true
   EnforcedStyle: double_quotes

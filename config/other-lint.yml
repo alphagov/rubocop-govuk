@@ -1,125 +1,210 @@
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/AmbiguousOperator:
   Description: >-
      Checks for ambiguous operators in the first argument of a
      method invocation without parentheses.
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/AmbiguousRegexpLiteral:
   Description: >-
     Checks for ambiguous regexp literals in the first argument of
     a method invocation without parenthesis.
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/AssignmentInCondition:
   Description: "Don't use assignment in conditions."
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Layout/ConditionPosition:
   Description: 'Checks for condition placed in a confusing position relative to the keyword.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/Debugger:
   Description: 'Check for debugger calls.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/DeprecatedClassMethods:
   Description: 'Check for deprecated class method calls.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/EmptyEnsure:
   Description: 'Checks for empty ensure block.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/EmptyInterpolation:
   Description: 'Checks for empty string interpolation.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/EnsureReturn:
   Description: 'Never use return in an ensure block.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Security/Eval:
   Description: 'The use of eval represents a serious security risk.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/SuppressedException:
   Description: "Don't suppress exception."
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/LiteralAsCondition:
   Description: 'Checks of literals used in conditions.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/LiteralInInterpolation:
   Description: 'Checks for literals used in interpolation.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/Loop:
   Description: >-
      Use Kernel#loop with break rather than begin/end/until or
      begin/end/while for post-loop tests.
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/ParenthesesAsGroupedExpression:
   Description: >-
      Checks for method calls with a space before the opening
      parenthesis.
   Enabled: true
 
+# Introduced in: 7b3d9f8ddcfe76477258216cbb1f259a579a778d
+# "A comma in a word array caused a subtle bug in Publisher:
+# alphagov/publisher#615"
+# TODO: remove, as enabled by default!
 Lint/PercentStringArray:
   Description: Checks for unwanted commas and quotes in %w/%W literals eg %w('foo', “bar”).
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/RequireParentheses:
   Description: >-
      Use parentheses in the method call to avoid confusion
      about precedence.
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/ShadowingOuterLocalVariable:
   Description: >-
      Do not use the same name as outer local variable
      for block arguments or block local variables.
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Layout/SpaceBeforeFirstArg:
   Description: >-
      Put a space between a method name and the first argument
      in a method call without parentheses.
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/UnderscorePrefixedVariableName:
   Description: 'Do not use prefix `_` for a variable that is used.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/UnusedMethodArgument:
   Description: 'Checks for unused method arguments.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/UnreachableCode:
   Description: 'Unreachable code.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/UselessAccessModifier:
   Description: 'Checks for useless access modifiers.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/UselessAssignment:
   Description: 'Checks for useless assignment to a local variable.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/UselessComparison:
   Description: 'Checks for comparison of something with itself.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/UselessElseWithoutRescue:
   Description: 'Checks for useless `else` in `begin..end` without `rescue`.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/UselessSetterCall:
   Description: 'Checks for useless setter call to a local variable.'
   Enabled: true
 
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
 Lint/Void:
   Description: 'Possible use of operator/literal/variable in void context.'
   Enabled: true
