@@ -1,7 +1,9 @@
+# Run with all config to check it's valid
 inherit_from:
   - ./config/default.yml
   - ./config/rails.yml
+  - ./config/rake.yml
 
-AllCops:
-  Exclude:
-    - tmp/**/*
+inherit_mode:
+  merge:
+    - Exclude
