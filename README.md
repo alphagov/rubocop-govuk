@@ -16,7 +16,7 @@ Inherit rules from the gem by adding the following to your project's RuboCop con
 ```yaml
 # .rubocop.yml
 inherit_gem:
-  rubocop-govuk: 
+  rubocop-govuk:
     - config/default.yml
 ```
 
@@ -25,14 +25,18 @@ or if you also need Rails specific rules:
 ```yaml
 # .rubocop.yml
 inherit_gem:
-  rubocop-govuk: 
+  rubocop-govuk:
     - config/default.yml
     - config/rails.yml
+
+inherit_mode:
+  merge:
+    - Exclude
 ```
 
 ## Usage
 
-Run RuboCop: 
+Run RuboCop:
 
 ```sh
 bundle exec rubocop
