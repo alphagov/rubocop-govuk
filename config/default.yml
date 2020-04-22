@@ -4,6 +4,8 @@ AllCops:
     - 'bin/**'
     - 'config.ru'
     - 'tmp/**/*'
+    - 'db/schema.rb'
+    - 'db/migrate/201*'
 
   DisplayCopNames:
     Description: 'Display cop names in offense messages'

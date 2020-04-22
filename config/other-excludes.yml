@@ -1,7 +1,3 @@
-AllCops:
-  Exclude:
-    - db/schema.rb
-
 Metrics/BlockLength:
   Enabled: true
   Exclude:
