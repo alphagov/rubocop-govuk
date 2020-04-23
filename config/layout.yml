@@ -264,14 +264,6 @@ Layout/EmptyLinesAroundAccessModifier:
   Description: "Keep blank lines around access modifiers."
   Enabled: true
 
-# TODO: conflicts with gds-ruby-styleguide.rake!
-# Layout/EmptyLines:
-#  Description: "Don't use several empty lines in a row."
-#  Enabled: true
-Layout/EmptyLines:
-  Description: "Keeps track of empty lines around expression bodies."
-  Enabled: false
-
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here! Suggest enabling this with
 # "EnforcedStyle: consistent".
@@ -299,18 +291,6 @@ Layout/LeadingCommentSpace:
 # TODO: unclear why this is here!
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
-
-# TODO: conflicts with other-lint.yml!
-# Layout/SpaceBeforeFirstArg:
-# Description: >-
-#     Put a space between a method name and the first argument
-#     in a method call without parentheses.
-#  Enabled: true
-Layout/SpaceBeforeFirstArg:
-  Description: >-
-    Checks that exactly one space is used between a method name
-    and the first argument for method calls without parentheses.
-  Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
