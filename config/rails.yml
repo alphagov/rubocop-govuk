@@ -13,34 +13,50 @@ AllCops:
 Rails:
   Enabled: true
 
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
 Rails/ActionFilter:
   Description: 'Enforces consistent use of action filter methods.'
   Enabled: false
 
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
 Rails/Delegate:
   Description: 'Prefer delegate method for delegations.'
   Enabled: false
 
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
 Rails/HasAndBelongsToMany:
   Description: 'Prefer has_many :through to has_and_belongs_to_many.'
   Enabled: false
 
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
 Rails/Output:
   Description: 'Checks for calls to puts, print, etc.'
   Enabled: false
 
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
 Rails/ReadWriteAttribute:
   Description: 'Checks for read_attribute(:attr) and write_attribute(:attr, val).'
   Enabled: false
 
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
 Rails/ScopeArgs:
   Description: 'Checks the arguments of ActiveRecord scopes.'
   Enabled: false
 
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
 Rails/Validation:
   Description: 'Use sexy validations.'
   Enabled: false
 
+# Introduced in: 91d7bf4895db12727582ad7bf47bdcb20ab178f7
+# TODO: unclear (in any real detail) why this is here!
 Rails/SkipsModelValidations:
   Description: 'Avoid methods that skip model validations.'
   Enabled: false

@@ -1,7 +1,11 @@
-AllCops:
-  Exclude:
-    - db/schema.rb
-
+# Introduced in: 195e1d6934e610efed35151cfe90b01b805d7581
+# Introduced in: b7a98b43a4b0644b8d4ac40aa3ddaf35f06fa58f
+# "Many test frameworks use blocks for the entire test
+# case in a file as well as for individual tests within the file.
+# It's not unusual for a test case to be several lines
+# longer than the upper limit of the BlockLength cop,
+# and there's very little we can do to avoid that so
+# there's no point running this cop on our tests."
 Metrics/BlockLength:
   Enabled: true
   Exclude:
@@ -9,8 +13,26 @@ Metrics/BlockLength:
     - "**/spec/**/*"
   ExcludedMethods: ["namespace"]
 
+# Introduced in: 278fc6e903834acfb37565795a196b85282560b0
+# "A common pattern in our Gemfiles is to declare a gem
+# differently if we're in a dev mode or not. For example
+#
+# if ENV['API_DEV']
+#   gem 'gds-api-adapters', path: '../gds-api-adapters'
+# else
+#   gem 'gds-api-adapters', "~> 50.8.0"
+# end"
+# TODO: see if we can remove this (no longer valid??)
 Bundler/DuplicatedGem:
   Enabled: false
 
+# Introduced in: 5ca6b7d20fd62a6ce890868abdeca12837e436d7
+# "The wording of the description is hard to understand - it's not
+# immediately obvious what you have to do, and doesn't really say why
+# this is a good thing.
+#
+# It's not auto-fixable, which means it takes a lot of time to get the
+# syntax right for every occurrence of `%.2f` for example (taken from
+# `smart-answers`) for not very much benefit."
 Style/FormatStringToken:
   Enabled: false
