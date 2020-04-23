@@ -1,0 +1,6 @@
+# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
+# "Enable all the lint checks"
+# TODO: remove, as enabled by default!
+Security/Eval:
+  Description: 'The use of eval represents a serious security risk.'
+  Enabled: true
