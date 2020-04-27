@@ -20,9 +20,11 @@ AllCops:
     Enabled: true
 
 inherit_from:
-  - gds-ruby-styleguide.yml
-  - other-lint.yml
-  - other-style.yml
-  - other-metrics.yml
-  - other-excludes.yml
+  - bundler.yml
+  - layout.yml
+  - lint.yml
+  - metrics.yml
+  - naming.yml
+  - security.yml
+  - style.yml
   - rake.yml

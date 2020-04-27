@@ -1,0 +1,59 @@
+# Part of the orignal GDS styleguide
+# "Use CamelCase for classes and modules."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
+Naming/ClassAndModuleCamelCase:
+  Description: Use CamelCase for classes and modules.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Use SCREAMING_SNAKE_CASE for other constants."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
+Naming/ConstantName:
+  Description: Constants should use SCREAMING_SNAKE_CASE.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Use snake_case for methods and variables."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
+Naming/MethodName:
+  Description: Use the configured style when naming methods.
+  Enabled: true
+  EnforcedStyle: snake_case
+
+# Part of the orignal GDS styleguide
+# "Use snake_case for methods and variables."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+# TODO: remove, as enabled by default!
+Naming/VariableName:
+  Description: Use the configured style when naming variables.
+  Enabled: true
+  EnforcedStyle: snake_case
+
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: conflicts with the original GDS styleguide
+# "Avoid get/set method names"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
+Naming/AccessorMethodName:
+  Description: Check the naming of accessor methods for get_/set_.
+  Enabled: false
+
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
+Naming/AsciiIdentifiers:
+  Description: 'Use only ascii symbols in identifiers.'
+  Enabled: false
+
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
+Naming/FileName:
+  Description: 'Use snake_case for source file names.'
+  Enabled: false
+
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
+Naming/PredicateName:
+  Description: 'Check the names of predicate methods.'
+  Enabled: false

@@ -1,39 +1,240 @@
-# Part of the orignal GDS styleguide
-# "Outdent private etc"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#classes
-Layout/AccessModifierIndentation:
-  Description: Check indentation of private/protected visibility modifiers.
+# TODO: unclear why this is here!
+# TODO: remove, as enabled by default!
+Style/MutableConstant:
+  Description: 'Freeze mutable objects assigned to constants.'
   Enabled: true
-  EnforcedStyle: outdent
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: conflicts with the original GDS styleguide
-# "Avoid get/set method names"
+# Part of the orignal GDS styleguide
+# "Always use && and || for logic"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/AndOr:
+  Description: Use &&/|| instead of and/or.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Use def with parentheses when there are arguments"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/DefWithParentheses:
+  Description: Use def with parentheses when there are arguments.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Never use for"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/For:
+  Description: Checks use of for or each in multiline loops.
+  Enabled: true
+  EnforcedStyle: each
+
+# https://github.com/alphagov/govuk-lint/pull/36
+# "When we have sequence of if/unless statements,
+# some with multiple lines within the if statement
+# block and some with a single line, forcing the single
+# line statements to re-written makes it a harder
+# to follow the branching logic."
+Style/IfUnlessModifier:
+  Description: Favor modifier if/unless usage when you have a single-line body.
+  Enabled: false
+
+# Part of the orignal GDS styleguide
+# "Never chain do...end"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+Style/MethodCalledOnDoEndBlock:
+  Description: Avoid chaining a method call on a do...end block.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Omit the parentheses when the method doesn’t accept any arguments"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+Style/MethodCallWithoutArgsParentheses:
+  Description: 'Do not use parentheses for method calls with no arguments.'
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Never chain do...end"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/MultilineBlockChain:
+  Description: Avoid multi-line chains of blocks.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Never use then for multi-line if/unless"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/MultilineIfThen:
+  Description: Never use then for multi-line if/unless.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Avoid the ternary operator [...]"
+# "However, do use the ternary operator [...]"
+# "for single line conditionals"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/MultilineTernaryOperator:
+  Description: 'Avoid multi-line ?: (the ternary operator); use if/unless instead.'
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "ternary operators must not be nested"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/NestedTernaryOperator:
+  Description: Use one expression per branch in a ternary operator.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Avoid the ternary operator [...]
+# However, do use the ternary operator [...]
+# for single line conditionals"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/OneLineConditional:
+  Description: Favor the ternary operator(?:) over if/then/else/end constructs.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Don’t use parentheses around the condition of an
+# if/unless/while unless the condition contains an assignment"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/ParenthesesAroundCondition:
+  Description: Don't use parentheses around the condition of an if/unless/while.
+  Enabled: true
+  AllowSafeAssignment: true
+
+# Part of the orignal GDS styleguide
+# "Avoid return where not required"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/RedundantReturn:
+  Description: Don't use return where it's not required.
+  Enabled: true
+  AllowMultipleReturnValues: false
+
+# Part of the orignal GDS styleguide
+# "Never use unless with else. Rewrite these with the positive case first"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Style/UnlessElse:
+  Description: Never use unless with else. Rewrite these with the positive case first.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Use def self.method to define singleton methods.
+# This makes the methods more resistant to refactoring changes."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#classes
+# TODO: remove, as enabled by default!
+Style/ClassMethods:
+  Description: Use self when defining module/class methods.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Avoid the usage of class (@@) variables"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#classes
+# TODO: remove, as enabled by default!
+Style/ClassVars:
+  Description: Avoid the use of class variables.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Avoid get/set method names: these are better
+# implemented using Ruby's assignment syntax sugar.
+# Use attr_reader, attr_writer, and attr_accessor
+# for simple instance variable accessors."
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
-Naming/AccessorMethodName:
-  Description: Check the naming of accessor methods for get_/set_.
+# TODO: remove, as enabled by default!
+Style/TrivialAccessors:
+  Description: Prefer attr_* methods to trivial readers/writers.
+  Enabled: true
+  ExactNameMatch: true
+  AllowPredicates: true
+  AllowDSLWriters: false
+  AllowedMethods:
+  - to_ary
+  - to_a
+  - to_c
+  - to_enum
+  - to_h
+  - to_hash
+  - to_i
+  - to_int
+  - to_io
+  - to_open
+  - to_path
+  - to_proc
+  - to_r
+  - to_regexp
+  - to_str
+  - to_s
+  - to_sym
+
+# Part of the orignal GDS styleguide
+# "Use Ruby 1.9 syntax for symbolic hash keys.
+# This includes method calls."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
+Style/HashSyntax:
+  Exclude:
+  - 'db/schema.rb'
+
+# Part of the orignal GDS styleguide
+# "Add a trailing comma to multi-line array [...]
+# for clearer diffs with less line noise."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+# Part of the orignal GDS styleguide
+# "Add a trailing comma to multi-line hash definitions [...]
+# for clearer diffs with less line noise."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+# Part of the orignal GDS styleguide
+# "When long lists of method arguments require
+# breaking over multiple lines, break each successive
+# argument on a new line, including the first argument
+# and closing paren. The final argument should include
+# a trailing comma."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+# Part of the orignal GDS styleguide
+# "Prefer %w to the literal array syntax when you need
+# an array of strings."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
+Style/WordArray:
+  MinSize: 0
+
+# "Try not to mix up single-quoted and double-quoted
+# strings within a file: it can make the code harder to read.
+# Definitely don't mix up single-quoted and double-quoted
+# strings within a method. If in doubt, use double-quoted strings,
+# because you’ll probably need to use interpolation somewhere.
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+# Introduced in: 5ca6b7d20fd62a6ce890868abdeca12837e436d7
+# "The wording of the description is hard to understand - it's not
+# immediately obvious what you have to do, and doesn't really say why
+# this is a good thing.
+#
+# It's not auto-fixable, which means it takes a lot of time to get the
+# syntax right for every occurrence of `%.2f` for example (taken from
+# `smart-answers`) for not very much benefit."
+Style/FormatStringToken:
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
 Style/Alias:
   Description: 'Use alias_method instead of alias.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/HashAlignment:
-  Description: >-
-    Align the elements of a hash literal if they span more than
-    one line.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/ParameterAlignment:
-  Description: >-
-    Align the parameters of a method call if they span more
-    than one line.
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -46,12 +247,6 @@ Style/ArrayJoin:
 # TODO: unclear why this is here!
 Style/AsciiComments:
   Description: 'Use only ascii symbols in comments.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Naming/AsciiIdentifiers:
-  Description: 'Use only ascii symbols in identifiers.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -70,12 +265,6 @@ Style/BeginBlock:
 # TODO: unclear why this is here!
 Style/BlockComments:
   Description: 'Do not use block comments.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Metrics/BlockNesting:
-  Description: 'Avoid excessive block nesting'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -105,11 +294,6 @@ Style/ClassAndModuleChildren:
   Description: 'Checks style of children classes and modules.'
   Enabled: false
 
-# TODO: duplicate (other-metrics.yml), remove
-Metrics/ClassLength:
-  Description: 'Avoid classes longer than 100 lines of code.'
-  Enabled: false
-
 # TODO: unclear why this is here!
 # TODO: remove, as disabled by default
 Style/CollectionMethods:
@@ -132,21 +316,6 @@ Style/CommentAnnotation:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Layout/CommentIndentation:
-  Description: 'Indentation of comments.'
-  Enabled: false
-
-# Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
-# "Disable opinionated cops"
-#
-# We should avoid cops that are based on heuristics, since
-# it's not clear what action to take to fix an issue.
-Metrics/CyclomaticComplexity:
-  Description: 'Avoid complex methods.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/PreferredHashMethods:
   Description: 'Checks for use of deprecated Hash methods.'
   Enabled: false
@@ -162,12 +331,6 @@ Style/Documentation:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Layout/DotPosition:
-  Description: 'Checks the position of the dot in multi-line method calls.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/DoubleNegation:
   Description: 'Checks for uses of double negation (!!).'
   Enabled: false
@@ -176,23 +339,6 @@ Style/DoubleNegation:
 # TODO: unclear why this is here!
 Style/EachWithObject:
   Description: 'Prefer `each_with_object` over `inject` or `reduce`.'
-  Enabled: false
-
-# Part of the original GDS styleguide
-# "leave one blank line before the visibility modifier
-# and one blank line below in order to emphasize that
-# it applies to all methods below it"
-# TODO: remove, as enabled by default!
-Layout/EmptyLinesAroundAccessModifier:
-  Description: "Keep blank lines around access modifiers."
-  Enabled: true
-
-# TODO: conflicts with gds-ruby-styleguide.rake!
-# Layout/EmptyLines:
-#  Description: "Don't use several empty lines in a row."
-#  Enabled: true
-Layout/EmptyLines:
-  Description: "Keeps track of empty lines around expression bodies."
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -217,18 +363,6 @@ Style/EndBlock:
 # TODO: unclear why this is here!
 Style/EvenOdd:
   Description: 'Favor the use of Fixnum#even? && Fixnum#odd?'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Naming/FileName:
-  Description: 'Use snake_case for source file names.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Lint/FlipFlop:
-  Description: 'Checks for flip flops'
   Enabled: false
 
 # TODO: duplicate (other-excludes.yml), remove
@@ -259,22 +393,6 @@ Style/IfWithSemicolon:
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here! Suggest enabling this with
-# "EnforcedStyle: consistent".
-Layout/FirstArrayElementIndentation:
-  Description: >-
-    Checks the indentation of the first element in an array
-    literal.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here! Suggest enabling this with
-# "EnforcedStyle: consistent".
-Layout/FirstHashElementIndentation:
-  Description: 'Checks the indentation of the first key in a hash literal.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
 Style/Lambda:
   Description: 'Use the new lambda literal syntax for single-line blocks.'
@@ -284,12 +402,6 @@ Style/Lambda:
 # TODO: unclear why this is here!
 Style/LambdaCall:
   Description: 'Use lambda.call(...) instead of lambda.(...).'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/LeadingCommentSpace:
-  Description: 'Comments should start with a space.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -308,26 +420,11 @@ Style/MethodDefParentheses:
     parentheses.
   Enabled: false
 
-# Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
-# "Disable opinionated cops"
-#
-# We should avoid cops that are based on heuristics, since
-# it's not clear what action to take to fix an issue.
-Metrics/MethodLength:
-  Description: 'Avoid methods longer than 10 lines of code.'
-  Enabled: false
-
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
 Style/ModuleFunction:
   Description: 'Checks for usage of `extend self` in modules.'
   Enabled: false
-
-# Introduced in: 9b2a744ab119d7797aaf423abcec914360f4208e
-# "More lenient on multi-line operations"
-# TODO: unclear why this is here!
-Layout/MultilineOperationIndentation:
-  EnforcedStyle: indented
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
@@ -375,15 +472,6 @@ Style/NumericLiterals:
     readability.
   Enabled: false
 
-# Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
-# "Disable opinionated cops"
-#
-# We should avoid cops that are based on heuristics, since
-# it's not clear what action to take to fix an issue.
-Metrics/ParameterLists:
-  Description: 'Avoid parameter lists longer than three or four parameters.'
-  Enabled: false
-
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
 Style/PercentLiteralDelimiters:
@@ -394,12 +482,6 @@ Style/PercentLiteralDelimiters:
 # TODO: unclear why this is here!
 Style/PerlBackrefs:
   Description: 'Avoid Perl-style regex back references.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Naming/PredicateName:
-  Description: 'Check the names of predicate methods.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -493,57 +575,6 @@ Style/SingleLineBlockParams:
 Style/SingleLineMethods:
   Description: 'Avoid single-line methods.'
   Enabled: false
-
-# TODO: conflicts with other-lint.yml!
-# Layout/SpaceBeforeFirstArg:
-# Description: >-
-#     Put a space between a method name and the first argument
-#     in a method call without parentheses.
-#  Enabled: true
-Layout/SpaceBeforeFirstArg:
-  Description: >-
-    Checks that exactly one space is used between a method name
-    and the first argument for method calls without parentheses.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/SpaceAroundKeyword:
-  Description: 'Use spaces after if/elsif/unless/while/until/case/when.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/SpaceAfterNot:
-  Description: Tracks redundant space after the ! operator.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/SpaceBeforeComment:
-  Description: >-
-    Checks for missing space between code and a comment on the
-    same line.
-  Enabled: false
-
-# Part of the original GDS styleguide
-# "Use spaces [...] around { and before }"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceInsideBlockBraces:
-  Description: >-
-    Checks that block braces have or don't have surrounding space.
-    For blocks taking parameters, checks that the left brace has
-    or doesn't have trailing space.
-  Enabled: true
-
-# Part of the original GDS styleguide
-# "Use spaces [...] around { and before }"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceInsideHashLiteralBraces:
-  Description: "Use spaces inside hash literal braces - or don't."
-  Enabled: true
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!

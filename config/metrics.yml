@@ -1,0 +1,79 @@
+# Introduced in: 195e1d6934e610efed35151cfe90b01b805d7581
+# Introduced in: b7a98b43a4b0644b8d4ac40aa3ddaf35f06fa58f
+# "Many test frameworks use blocks for the entire test
+# case in a file as well as for individual tests within the file.
+# It's not unusual for a test case to be several lines
+# longer than the upper limit of the BlockLength cop,
+# and there's very little we can do to avoid that so
+# there's no point running this cop on our tests."
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - test/**/*
+    - "**/spec/**/*"
+  ExcludedMethods: ["namespace"]
+
+# Introduced in: 736b3d295f88b9ba6676fc168b823535582388c2
+# "Disable opinionated cops"
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+Metrics/AbcSize:
+  Enabled: false
+
+# Introduced in: 736b3d295f88b9ba6676fc168b823535582388c2
+# "Disable opinionated cops"
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+Metrics/ClassLength:
+  Enabled: false
+
+# Introduced in: 736b3d295f88b9ba6676fc168b823535582388c2
+# "Disable opinionated cops"
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+Metrics/ModuleLength:
+  Enabled: false
+
+# Introduced in: 736b3d295f88b9ba6676fc168b823535582388c2
+# "Disable opinionated cops"
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
+Metrics/BlockNesting:
+  Description: 'Avoid excessive block nesting'
+  Enabled: false
+
+# Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
+# "Disable opinionated cops"
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+Metrics/CyclomaticComplexity:
+  Description: 'Avoid complex methods.'
+  Enabled: false
+
+# Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
+# "Disable opinionated cops"
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+Metrics/MethodLength:
+  Description: 'Avoid methods longer than 10 lines of code.'
+  Enabled: false
+
+# Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
+# "Disable opinionated cops"
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+Metrics/ParameterLists:
+  Description: 'Avoid parameter lists longer than three or four parameters.'
+  Enabled: false

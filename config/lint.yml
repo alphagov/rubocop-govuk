@@ -1,3 +1,35 @@
+# Part of the orignal GDS styleguide
+# "Use soft-tabs with a two-space indent."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
+# TODO: remove, as enabled by default!
+Lint/ElseLayout:
+  Description: 'Check for odd code arrangement in an else block.'
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Use _ for unused block parameters"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
+# TODO: remove, as enabled by default!
+Lint/UnusedBlockArgument:
+  Description: Checks for unused block arguments.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Avoid rescuing the Exception class."
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#exceptions
+# TODO: remove, as enabled by default!
+Lint/RescueException:
+  Description: Avoid rescuing the Exception class.
+  Enabled: true
+
+# Part of the orignal GDS styleguide
+# "Prefer string interpolation instead of string concatenation"
+# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#strings
+# TODO: remove, as enabled by default!
+Lint/RedundantStringCoercion:
+  Description: Checks for Object#to_s usage in string interpolation.
+  Enabled: true
+
 # Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
 # "Enable all the lint checks"
 # TODO: remove, as enabled by default!
@@ -21,13 +53,6 @@ Lint/AmbiguousRegexpLiteral:
 # TODO: remove, as enabled by default!
 Lint/AssignmentInCondition:
   Description: "Don't use assignment in conditions."
-  Enabled: true
-
-# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
-# "Enable all the lint checks"
-# TODO: remove, as enabled by default!
-Layout/ConditionPosition:
-  Description: 'Checks for condition placed in a confusing position relative to the keyword.'
   Enabled: true
 
 # Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
@@ -63,13 +88,6 @@ Lint/EmptyInterpolation:
 # TODO: remove, as enabled by default!
 Lint/EnsureReturn:
   Description: 'Never use return in an ensure block.'
-  Enabled: true
-
-# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
-# "Enable all the lint checks"
-# TODO: remove, as enabled by default!
-Security/Eval:
-  Description: 'The use of eval represents a serious security risk.'
   Enabled: true
 
 # Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
@@ -140,15 +158,6 @@ Lint/ShadowingOuterLocalVariable:
 # Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
 # "Enable all the lint checks"
 # TODO: remove, as enabled by default!
-Layout/SpaceBeforeFirstArg:
-  Description: >-
-     Put a space between a method name and the first argument
-     in a method call without parentheses.
-  Enabled: true
-
-# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
-# "Enable all the lint checks"
-# TODO: remove, as enabled by default!
 Lint/UnderscorePrefixedVariableName:
   Description: 'Do not use prefix `_` for a variable that is used.'
   Enabled: true
@@ -208,3 +217,9 @@ Lint/UselessSetterCall:
 Lint/Void:
   Description: 'Possible use of operator/literal/variable in void context.'
   Enabled: true
+
+# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
+# TODO: unclear why this is here!
+Lint/FlipFlop:
+  Description: 'Checks for flip flops'
+  Enabled: false
