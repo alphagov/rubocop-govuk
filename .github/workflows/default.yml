@@ -1,0 +1,39 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+
+    - run: bundle install --jobs 4 --retry 3
+    - run: bundle exec rake
+
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/master' }}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+
+    - env:
+        GEM_HOST_API_KEY: ${{ secrets.GEM_HOST_API_KEY }}
+      run: |
+        VERSION=$(ruby -e "puts eval(File.read('rubocop-govuk.gemspec')).version")
+        GEM_VERSION=$(gem list --exact --remote rubocop-govuk)
+
+        if [ "${GEM_VERSION}" != "rubocop-govuk (${VERSION})" ]; then
+          gem build rubocop-govuk.gemspec
+          gem push
+        fi
+
+        if ! git ls-remote --tags --exit-code origin v${VERSION}; then
+          git tag v${VERSION}
+          git push --tags
+        fi
