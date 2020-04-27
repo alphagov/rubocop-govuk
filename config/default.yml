@@ -25,6 +25,5 @@ inherit_from:
   - lint.yml
   - metrics.yml
   - naming.yml
-  - security.yml
   - style.yml
   - rake.yml
