@@ -30,7 +30,7 @@ jobs:
 
         if [ "${GEM_VERSION}" != "rubocop-govuk (${VERSION})" ]; then
           gem build rubocop-govuk.gemspec
-          gem push
+          gem push rubocop-govuk
         fi
 
         if ! git ls-remote --tags --exit-code origin v${VERSION}; then
