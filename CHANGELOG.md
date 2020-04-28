@@ -1,3 +1,8 @@
+# 3.6.0
+
+* Remove config that matches RuboCop defaults (#47)
+* Reorganise all the Cops (#44)
+
 # 3.5.0
 
 * Disable pending cops by default (#37)
