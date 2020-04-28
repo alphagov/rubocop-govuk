@@ -1,21 +1,3 @@
-# Part of the orignal GDS styleguide
-# "Use soft-tabs with a two-space indent."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/BlockAlignment:
-  Description: 'Align block ends correctly.'
-  Enabled: true
-
-# Part of the original GDS styleguide
-# "Indent when as deep as case."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/CaseIndentation:
-  Description: Indentation of when in a case/when/[else/]end.
-  Enabled: true
-  EnforcedStyle: case
-  IndentOneStep: false
-
 # TODO: unclear why this is here!
 # https://github.com/alphagov/govuk-lint/pull/38
 Layout/ClosingParenthesisIndentation:
@@ -30,46 +12,6 @@ Layout/EmptyLineBetweenDefs:
   Enabled: true
   AllowAdjacentOneLineDefs: false
 
-# Part of the orignal GDS styleguide
-# "Never leave trailing whitespace"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/EmptyLines:
-  Description: "Don't use several empty lines in a row."
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use soft-tabs with a two-space indent."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/EndAlignment:
-  Description: 'Align ends correctly.'
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Never leave trailing whitespace"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/EndOfLine:
-  Description: 'Use Unix-style line endings.'
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use soft-tabs with a two-space indent."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/IndentationWidth:
-  Description: Use 2 spaces for indentation.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use soft-tabs with a two-space indent."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/IndentationConsistency:
-  Description: Keep indentation straight.
-  Enabled: true
-
 # https://github.com/alphagov/govuk-lint/pull/7
 # "There are occasions where following this rule forces you to make the
 # code less readable. This is particularly the case for tests where method
@@ -79,145 +21,10 @@ Layout/LineLength:
   Description: Limit lines to 80 characters.
   Enabled: false
 
-# Part of the orignal GDS styleguide
-# "Use spaces around operators"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceAroundOperators:
-  Description: Use spaces around operators.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use spaces [...] around {"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceBeforeBlockBraces:
-  Description: Checks that the left block brace has or doesn't have space before it.
-  Enabled: true
-  EnforcedStyle: space
-
-# Part of the orignal GDS styleguide
-# "Use spaces [...] after semicolons"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceAfterSemicolon:
-  Description: Use spaces after semicolons.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use spaces [...] after colons"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceAfterColon:
-  Description: Use spaces after colons.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use spaces [...] after commas"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceAfterComma:
-  Description: Use spaces after commas.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "No spaces after [...] [ or before ]"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceInsideReferenceBrackets:
-  Description: No spaces after array[ or before ].
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "No spaces after [...] [ or before [...] ]"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceInsideArrayLiteralBrackets:
-  Description: No spaces after array = [ or before ].
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "No spaces after ( [...] or before [...] )"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceInsideParens:
-  Description: No spaces after ( or before ).
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use soft-tabs with a two-space indent."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/IndentationStyle:
-  Description: No hard tabs.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Never leave trailing whitespace"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/TrailingWhitespace:
-  Description: Avoid trailing whitespace.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Never leave trailing whitespace"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/TrailingEmptyLines:
-  Description: Checks trailing blank lines and final newline.
-  Enabled: true
-  EnforcedStyle: final_newline
-
-# Part of the orignal GDS styleguide
-# "Never put a space between a method name and the opening parenthesis"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Layout/SpaceAfterMethodName:
-  Description: Never put a space between a method name and the opening parenthesis in
-    a method definition.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use spaces around the = operator when assigning default values to method parameters"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Layout/SpaceAroundEqualsInParameterDefault:
-  Description: Checks that the equals signs in parameter default assignments have or
-    don't have surrounding space depending on configuration.
-  Enabled: true
-  EnforcedStyle: space
-
-# Part of the orignal GDS styleguide
-# "Instead of wrapping a long list of array
-# elements to a newline, write one element per line.
-# This enhances readability and helps generate clearer diffs."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
-# TODO: remove, as enabled by default!
-Layout/ArrayAlignment:
-  Description: Align the elements of an array literal if they span more than one line.
-  Enabled: true
-
 # TODO: unclear why this is here!
 # https://github.com/alphagov/govuk-lint/commit/5e42ec5690e3d4cc8fff44d0b0268c8e581c423a
 Layout/MultilineMethodCallIndentation:
   Enabled: false
-
-# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
-# "Enable all the lint checks"
-# TODO: remove, as enabled by default!
-Layout/ConditionPosition:
-  Description: 'Checks for condition placed in a confusing position relative to the keyword.'
-  Enabled: true
-
-# Unnecessary: 3cc7240d3456844b4c2f364d5933eee3a86417fb
-# "Enable all the lint checks"
-# TODO: remove, as enabled by default!
-Layout/SpaceBeforeFirstArg:
-  Description: >-
-     Put a space between a method name and the first argument
-     in a method call without parentheses.
-  Enabled: true
 
 # Part of the orignal GDS styleguide
 # "Outdent private etc"
@@ -254,15 +61,6 @@ Layout/CommentIndentation:
 Layout/DotPosition:
   Description: 'Checks the position of the dot in multi-line method calls.'
   Enabled: false
-
-# Part of the original GDS styleguide
-# "leave one blank line before the visibility modifier
-# and one blank line below in order to emphasize that
-# it applies to all methods below it"
-# TODO: remove, as enabled by default!
-Layout/EmptyLinesAroundAccessModifier:
-  Description: "Keep blank lines around access modifiers."
-  Enabled: true
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here! Suggest enabling this with
@@ -311,22 +109,3 @@ Layout/SpaceBeforeComment:
     Checks for missing space between code and a comment on the
     same line.
   Enabled: false
-
-# Part of the original GDS styleguide
-# "Use spaces [...] around { and before }"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceInsideBlockBraces:
-  Description: >-
-    Checks that block braces have or don't have surrounding space.
-    For blocks taking parameters, checks that the left brace has
-    or doesn't have trailing space.
-  Enabled: true
-
-# Part of the original GDS styleguide
-# "Use spaces [...] around { and before }"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
-# TODO: remove, as enabled by default!
-Layout/SpaceInsideHashLiteralBraces:
-  Description: "Use spaces inside hash literal braces - or don't."
-  Enabled: true

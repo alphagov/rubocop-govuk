@@ -1,34 +1,3 @@
-# TODO: unclear why this is here!
-# TODO: remove, as enabled by default!
-Style/MutableConstant:
-  Description: 'Freeze mutable objects assigned to constants.'
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Always use && and || for logic"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/AndOr:
-  Description: Use &&/|| instead of and/or.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use def with parentheses when there are arguments"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/DefWithParentheses:
-  Description: Use def with parentheses when there are arguments.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Never use for"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/For:
-  Description: Checks use of for or each in multiline loops.
-  Enabled: true
-  EnforcedStyle: each
-
 # https://github.com/alphagov/govuk-lint/pull/36
 # "When we have sequence of if/unless statements,
 # some with multiple lines within the if statement
@@ -52,126 +21,6 @@ Style/MethodCalledOnDoEndBlock:
 Style/MethodCallWithoutArgsParentheses:
   Description: 'Do not use parentheses for method calls with no arguments.'
   Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Never chain do...end"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/MultilineBlockChain:
-  Description: Avoid multi-line chains of blocks.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Never use then for multi-line if/unless"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/MultilineIfThen:
-  Description: Never use then for multi-line if/unless.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Avoid the ternary operator [...]"
-# "However, do use the ternary operator [...]"
-# "for single line conditionals"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/MultilineTernaryOperator:
-  Description: 'Avoid multi-line ?: (the ternary operator); use if/unless instead.'
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "ternary operators must not be nested"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/NestedTernaryOperator:
-  Description: Use one expression per branch in a ternary operator.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Avoid the ternary operator [...]
-# However, do use the ternary operator [...]
-# for single line conditionals"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/OneLineConditional:
-  Description: Favor the ternary operator(?:) over if/then/else/end constructs.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Don’t use parentheses around the condition of an
-# if/unless/while unless the condition contains an assignment"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/ParenthesesAroundCondition:
-  Description: Don't use parentheses around the condition of an if/unless/while.
-  Enabled: true
-  AllowSafeAssignment: true
-
-# Part of the orignal GDS styleguide
-# "Avoid return where not required"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/RedundantReturn:
-  Description: Don't use return where it's not required.
-  Enabled: true
-  AllowMultipleReturnValues: false
-
-# Part of the orignal GDS styleguide
-# "Never use unless with else. Rewrite these with the positive case first"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-# TODO: remove, as enabled by default!
-Style/UnlessElse:
-  Description: Never use unless with else. Rewrite these with the positive case first.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Use def self.method to define singleton methods.
-# This makes the methods more resistant to refactoring changes."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#classes
-# TODO: remove, as enabled by default!
-Style/ClassMethods:
-  Description: Use self when defining module/class methods.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Avoid the usage of class (@@) variables"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#classes
-# TODO: remove, as enabled by default!
-Style/ClassVars:
-  Description: Avoid the use of class variables.
-  Enabled: true
-
-# Part of the orignal GDS styleguide
-# "Avoid get/set method names: these are better
-# implemented using Ruby's assignment syntax sugar.
-# Use attr_reader, attr_writer, and attr_accessor
-# for simple instance variable accessors."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#naming
-# TODO: remove, as enabled by default!
-Style/TrivialAccessors:
-  Description: Prefer attr_* methods to trivial readers/writers.
-  Enabled: true
-  ExactNameMatch: true
-  AllowPredicates: true
-  AllowDSLWriters: false
-  AllowedMethods:
-  - to_ary
-  - to_a
-  - to_c
-  - to_enum
-  - to_h
-  - to_hash
-  - to_i
-  - to_int
-  - to_io
-  - to_open
-  - to_path
-  - to_proc
-  - to_r
-  - to_regexp
-  - to_str
-  - to_s
-  - to_sym
 
 # Part of the orignal GDS styleguide
 # "Use Ruby 1.9 syntax for symbolic hash keys.
@@ -292,12 +141,6 @@ Style/CharacterLiteral:
 # TODO: unclear why this is here!
 Style/ClassAndModuleChildren:
   Description: 'Checks style of children classes and modules.'
-  Enabled: false
-
-# TODO: unclear why this is here!
-# TODO: remove, as disabled by default
-Style/CollectionMethods:
-  Description: 'Preferred collection methods.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -560,13 +403,6 @@ Style/Semicolon:
 # TODO: unclear why this is here!
 Style/SignalException:
   Description: 'Checks for proper usage of fail and raise.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-# TODO: remove, as disabled by default!
-Style/SingleLineBlockParams:
-  Description: 'Enforces the names of some block params.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
