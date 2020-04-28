@@ -1,9 +1,3 @@
-# TODO: unclear why this is here!
-# https://github.com/alphagov/govuk-lint/pull/38
-Layout/ClosingParenthesisIndentation:
-  Description: 'Checks the indentation of hanging closing parentheses.'
-  Enabled: false
-
 # Part of the orignal GDS styleguide
 # "Use empty lines between defs and to break up a method into logical paragraphs."
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
@@ -35,34 +29,6 @@ Layout/AccessModifierIndentation:
   EnforcedStyle: outdent
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/HashAlignment:
-  Description: >-
-    Align the elements of a hash literal if they span more than
-    one line.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/ParameterAlignment:
-  Description: >-
-    Align the parameters of a method call if they span more
-    than one line.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/CommentIndentation:
-  Description: 'Indentation of comments.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/DotPosition:
-  Description: 'Checks the position of the dot in multi-line method calls.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here! Suggest enabling this with
 # "EnforcedStyle: consistent".
 Layout/FirstArrayElementIndentation:
@@ -78,34 +44,8 @@ Layout/FirstHashElementIndentation:
   Description: 'Checks the indentation of the first key in a hash literal.'
   Enabled: false
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/LeadingCommentSpace:
-  Description: 'Comments should start with a space.'
-  Enabled: false
-
 # Introduced in: 9b2a744ab119d7797aaf423abcec914360f4208e
 # "More lenient on multi-line operations"
 # TODO: unclear why this is here!
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/SpaceAroundKeyword:
-  Description: 'Use spaces after if/elsif/unless/while/until/case/when.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/SpaceAfterNot:
-  Description: Tracks redundant space after the ! operator.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Layout/SpaceBeforeComment:
-  Description: >-
-    Checks for missing space between code and a comment on the
-    same line.
-  Enabled: false
