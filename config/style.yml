@@ -88,32 +88,14 @@ Style/Alias:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/ArrayJoin:
-  Description: 'Use Array#join instead of Array#*.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/AsciiComments:
   Description: 'Use only ascii symbols in comments.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/Attr:
-  Description: 'Checks for uses of Module#attr.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/BeginBlock:
   Description: 'Avoid the use of BEGIN blocks.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/BlockComments:
-  Description: 'Do not use block comments.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -133,28 +115,8 @@ Style/CaseEquality:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/CharacterLiteral:
-  Description: 'Checks for uses of character literals.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/ClassAndModuleChildren:
   Description: 'Checks style of children classes and modules.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/ColonMethodCall:
-  Description: 'Do not use :: for method call.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/CommentAnnotation:
-  Description: >-
-    Checks formatting of special comments
-    (TODO, FIXME, OPTIMIZE, HACK, REVIEW).
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -180,32 +142,8 @@ Style/DoubleNegation:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/EachWithObject:
-  Description: 'Prefer `each_with_object` over `inject` or `reduce`.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/EmptyLiteral:
-  Description: 'Prefer literals to Array.new/Hash.new/String.new.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/Encoding:
   Description: 'Use UTF-8 as the source file encoding.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/EndBlock:
-  Description: 'Avoid the use of END blocks.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/EvenOdd:
-  Description: 'Favor the use of Fixnum#even? && Fixnum#odd?'
   Enabled: false
 
 # TODO: duplicate (other-excludes.yml), remove
@@ -249,14 +187,6 @@ Style/LambdaCall:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/LineEndConcatenation:
-  Description: >-
-    Use \ instead of + or << to concatenate two string literals at
-    line end.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/MethodDefParentheses:
   Description: >-
     Checks if the method definitions have or don't have
@@ -279,12 +209,6 @@ Style/NegatedIf:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/NegatedWhile:
-  Description: 'Favor until over while for negative conditions.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/Next:
   Description: 'Use `next` to skip iteration instead of a condition at the end.'
   Enabled: false
@@ -297,18 +221,6 @@ Style/NilComparison:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/NonNilCheck:
-  Description: 'Checks for redundant nil checks.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/Not:
-  Description: 'Use ! instead of not.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/NumericLiterals:
   Description: >-
     Add underscores to large numeric literals to improve their
@@ -316,46 +228,10 @@ Style/NumericLiterals:
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/PercentLiteralDelimiters:
-  Description: 'Use `%`-literal delimiters consistently'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/PerlBackrefs:
-  Description: 'Avoid Perl-style regex back references.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/Proc:
-  Description: 'Use proc instead of Proc.new.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here! Suggest enabling with
 # "EnforcedStyle: compact"
 Style/RaiseArgs:
   Description: 'Checks the arguments passed to raise/fail.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/RedundantBegin:
-  Description: "Don't use begin blocks when they are not needed."
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/RedundantException:
-  Description: "Checks for an obsolete RuntimeException argument in raise/fail."
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/RedundantSelf:
-  Description: "Don't use self where it's not needed."
   Enabled: false
 
 # Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
@@ -371,12 +247,6 @@ Style/RegexpLiteral:
     `MaxSlashes` '/' character.
   Enabled: false
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/RescueModifier:
-  Description: 'Avoid using rescue in its modifier form.'
-  Enabled: false
-
 # Introduced in: 7aaebf4dbdf2a8d677b4000d3cd3512d4fb91e99
 # "This is a relatively new Ruby feature and is not mentioned in the Style
 # guide, so this commit disables it by default."
@@ -385,18 +255,6 @@ Style/SafeNavigation:
   Description: >-
     This cop transforms usages of a method call safeguarded by a check for the
     existance of the object to safe navigation (`&.`).
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/SelfAssignment:
-  Description: 'Checks for places where self-assignment shorthand should have been used.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/Semicolon:
-  Description: "Don't use semicolons to terminate expressions."
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -414,48 +272,8 @@ Style/SingleLineMethods:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/SpecialGlobalVars:
-  Description: 'Avoid Perl-style global variables.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/RedundantCapitalW:
-  Description: 'Checks for %W when interpolation is not needed.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/CommandLiteral:
   Description: 'Checks for %x when `` would do.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/VariableInterpolation:
-  Description: >-
-    Don't interpolate global, instance and class variables
-    directly in strings.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/WhenThen:
-  Description: 'Use when x then ... for one-line cases.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/WhileUntilDo:
-  Description: 'Checks for redundant do after while or until.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/WhileUntilModifier:
-  Description: >-
-    Favor modifier while/until usage when you have a
-    single-line body.
   Enabled: false
 
 # Introduced in: b171d652d3e434b74ddc621df3b5be24c49bc7e8

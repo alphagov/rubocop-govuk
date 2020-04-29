@@ -15,7 +15,7 @@ task :explain_yourself do
   end
 
   unexplained_cops.flatten!
-  cops_exempt_from_explanation = %w(AllCops Rails)
+  cops_exempt_from_explanation = %w[AllCops Rails]
   unexplained_cops -= cops_exempt_from_explanation
 
   if unexplained_cops.any?
