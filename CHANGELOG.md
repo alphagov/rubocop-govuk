@@ -1,3 +1,7 @@
+# 3.7.0
+
+* Turn a load of Cops back on (#52)
+
 # 3.6.0
 
 * Remove config that matches RuboCop defaults (#47)
