@@ -15,8 +15,17 @@ Layout/LineLength:
   Description: Limit lines to 80 characters.
   Enabled: false
 
-# TODO: unclear why this is here!
-# https://github.com/alphagov/govuk-lint/commit/5e42ec5690e3d4cc8fff44d0b0268c8e581c423a
+# We have two styles of method call in our apps:
+#
+# SomeClass.first_method_call_on_same_line
+#          .other_method_call
+#
+# a_particularly_long_first_method_call
+#   .subsequent_method_call
+#
+# Any setting of this Cop would cause odd alignment
+# for one of these styles. Since there isn't a Cop to
+# set a preferred style, we should disable this one.
 Layout/MultilineMethodCallIndentation:
   Enabled: false
 
@@ -28,21 +37,33 @@ Layout/AccessModifierIndentation:
   Enabled: true
   EnforcedStyle: outdent
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here! Suggest enabling this with
-# "EnforcedStyle: consistent".
+# Our predominant style of writing multiline arrays is:
+#
+# my_array = [
+#   element_1,
+#   element_2,
+# ]
+#
+# even_in_a_method_call([
+#   element_1,
+#   element_2,
+# ])
 Layout/FirstArrayElementIndentation:
-  Description: >-
-    Checks the indentation of the first element in an array
-    literal.
-  Enabled: false
+  EnforcedStyle: consistent
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here! Suggest enabling this with
-# "EnforcedStyle: consistent".
+# Our predominant style of writing multiline hashes is:
+#
+# my_hash = {
+#   key_1: value_1,
+#   key_2: value_2,
+# }
+#
+# even_in_a_method_call({
+#   key_1: value_1,
+#   key_2: value_2,
+# })
 Layout/FirstHashElementIndentation:
-  Description: 'Checks the indentation of the first key in a hash literal.'
-  Enabled: false
+  EnforcedStyle: consistent
 
 # Introduced in: 9b2a744ab119d7797aaf423abcec914360f4208e
 # "More lenient on multi-line operations"
