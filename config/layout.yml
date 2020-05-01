@@ -65,8 +65,10 @@ Layout/FirstArrayElementIndentation:
 Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
+# Our predominant style of writing multiline operations is
+# to indent the subsequent lines. This helps to prevent
+# misreading the next line as a new/separate statement.
+#
 # Introduced in: 9b2a744ab119d7797aaf423abcec914360f4208e
-# "More lenient on multi-line operations"
-# TODO: unclear why this is here!
 Layout/MultilineOperationIndentation:
   EnforcedStyle: indented
