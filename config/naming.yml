@@ -15,18 +15,6 @@ Naming/AccessorMethodName:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Naming/AsciiIdentifiers:
-  Description: 'Use only ascii symbols in identifiers.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Naming/FileName:
-  Description: 'Use snake_case for source file names.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Naming/PredicateName:
   Description: 'Check the names of predicate methods.'
   Enabled: false
