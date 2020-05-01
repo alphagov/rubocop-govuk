@@ -1,5 +1,0 @@
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Lint/FlipFlop:
-  Description: 'Checks for flip flops'
-  Enabled: false
