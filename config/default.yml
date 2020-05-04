@@ -22,7 +22,6 @@ AllCops:
 inherit_from:
   - bundler.yml
   - layout.yml
-  - lint.yml
   - metrics.yml
   - naming.yml
   - style.yml
