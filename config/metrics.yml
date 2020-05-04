@@ -46,7 +46,9 @@ Metrics/PerceivedComplexity:
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
 Metrics/BlockNesting:
   Description: 'Avoid excessive block nesting'
   Enabled: false
