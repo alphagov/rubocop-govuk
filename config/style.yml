@@ -96,14 +96,15 @@ Style/Alias:
 Style/AsciiComments:
   AllowedChars: ['£']
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# We should only use braces in multiline blocks in a # chained
+# method call. This is consistent with the RSpec 'expect' syntax.
+#
+# expect {
+#   a_long_and_complex_method_call
+# }.to raise_error(SomeError)
+#
 Style/BlockDelimiters:
-  Description: >-
-    Avoid using {...} for multi-line blocks (multiline chaining is
-    always ugly).
-    Prefer {...} over do...end for single-line blocks.
-  Enabled: false
+  EnforcedStyle: braces_for_chaining
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
