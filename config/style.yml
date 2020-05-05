@@ -98,12 +98,6 @@ Style/AsciiComments:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/BeginBlock:
-  Description: 'Avoid the use of BEGIN blocks.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/BlockDelimiters:
   Description: >-
     Avoid using {...} for multi-line blocks (multiline chaining is
