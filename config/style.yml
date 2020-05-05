@@ -88,11 +88,13 @@ Style/FormatStringToken:
 Style/Alias:
   EnforcedStyle: prefer_alias_method
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# This prevents weird characters in comments, such as stylistic
+# quote characters and strange whitespace. We should only allow
+# special characters when they are essential for a comment. It's
+# a waste of effort to go and find the special sequence when an
+# alternative exists e.g. '×' can be replaced with '*' in maths.
 Style/AsciiComments:
-  Description: 'Use only ascii symbols in comments.'
-  Enabled: false
+  AllowedChars: ['£']
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
