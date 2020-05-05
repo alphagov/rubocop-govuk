@@ -80,11 +80,13 @@ Style/StringLiterals:
 Style/FormatStringToken:
   Enabled: false
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# This is a contentious issue, since 'alias_method' works in
+# all circumstances, whereas 'alias' only works lexically. As
+# with single vs. double quotes, it seems pointless to expend
+# effort deciding between them. Our predominant style is to use
+# 'alias_method', which always works.
 Style/Alias:
-  Description: 'Use alias_method instead of alias.'
-  Enabled: false
+  EnforcedStyle: prefer_alias_method
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
