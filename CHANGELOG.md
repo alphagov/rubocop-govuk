@@ -1,3 +1,13 @@
+# 3.8.0
+
+* Enable check for flip-flops (#55)
+* Enable Layout/FirstArrayElementIndentation (#56)
+* Enable Layout/FirstHashElementIndentation (#56)
+* Enable Naming/AsciiIdentifiers (#58)
+* Enable Naming/FileName (#58)
+* Enable Rails/ActionFilter (#59)
+* Enable Rails/ScopeArgs (#59)
+
 # 3.7.0
 
 * Turn a load of Cops back on (#52)
