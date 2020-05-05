@@ -113,12 +113,6 @@ Style/ClassAndModuleChildren:
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/PreferredHashMethods:
-  Description: 'Checks for use of deprecated Hash methods.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # Documenting every class is a lot of effort and we don't
 # expect to get any value from this. Another risk of adding
 # more documentation is the potential for confusion if that
