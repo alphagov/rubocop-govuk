@@ -197,12 +197,10 @@ Style/SafeNavigation:
     existance of the object to safe navigation (`&.`).
   Enabled: false
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here! Suggest enabling with
-# "AllowIfMethodIsEmpty: true" to accommodate Rails actions.
+# We should allow for single line empty methods, as this
+# is a convention for Rails controller actions.
 Style/SingleLineMethods:
-  Description: 'Avoid single-line methods.'
-  Enabled: false
+  AllowIfMethodIsEmpty: true
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
