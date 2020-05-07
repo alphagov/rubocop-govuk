@@ -1,5 +1,3 @@
-# coding: utf-8
-
 Gem::Specification.new do |spec|
   spec.name          = "rubocop-govuk"
   spec.version       = "3.8.0"
