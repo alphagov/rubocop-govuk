@@ -161,12 +161,6 @@ Style/Next:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/NilComparison:
-  Description: 'Prefer x.nil? to x == nil.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/NumericLiterals:
   Description: >-
     Add underscores to large numeric literals to improve their
