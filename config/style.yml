@@ -139,22 +139,10 @@ Style/GuardClause:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/Lambda:
-  Description: 'Use the new lambda literal syntax for single-line blocks.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/MethodDefParentheses:
   Description: >-
     Checks if the method definitions have or don't have
     parentheses.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/ModuleFunction:
-  Description: 'Checks for usage of `extend self` in modules.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
