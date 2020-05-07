@@ -123,12 +123,6 @@ Style/Documentation:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/Encoding:
-  Description: 'Use UTF-8 as the source file encoding.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/GlobalVars:
   Description: 'Do not introduce global variables.'
   Enabled: false
