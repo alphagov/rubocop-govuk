@@ -198,12 +198,6 @@ Style/SafeNavigation:
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/SignalException:
-  Description: 'Checks for proper usage of fail and raise.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here! Suggest enabling with
 # "AllowIfMethodIsEmpty: true" to accommodate Rails actions.
 Style/SingleLineMethods:
