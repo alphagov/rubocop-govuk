@@ -202,12 +202,6 @@ Style/SafeNavigation:
 Style/SingleLineMethods:
   AllowIfMethodIsEmpty: true
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/CommandLiteral:
-  Description: 'Checks for %x when `` would do.'
-  Enabled: false
-
 # Introduced in: b171d652d3e434b74ddc621df3b5be24c49bc7e8
 # This cop was added in preperation for a Ruby feature
 # that is no longer likely to become part of the language.
