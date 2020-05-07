@@ -80,49 +80,36 @@ Style/StringLiterals:
 Style/FormatStringToken:
   Enabled: false
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# This is a contentious issue, since 'alias_method' works in
+# all circumstances, whereas 'alias' only works lexically. As
+# with single vs. double quotes, it seems pointless to expend
+# effort deciding between them. Our predominant style is to use
+# 'alias_method', which always works.
 Style/Alias:
-  Description: 'Use alias_method instead of alias.'
-  Enabled: false
+  EnforcedStyle: prefer_alias_method
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# This prevents weird characters in comments, such as stylistic
+# quote characters and strange whitespace. We should only allow
+# special characters when they are essential for a comment. It's
+# a waste of effort to go and find the special sequence when an
+# alternative exists e.g. '×' can be replaced with '*' in maths.
 Style/AsciiComments:
-  Description: 'Use only ascii symbols in comments.'
-  Enabled: false
+  AllowedChars: ['£']
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/BeginBlock:
-  Description: 'Avoid the use of BEGIN blocks.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# We should only use braces in multiline blocks in a # chained
+# method call. This is consistent with the RSpec 'expect' syntax.
+#
+# expect {
+#   a_long_and_complex_method_call
+# }.to raise_error(SomeError)
+#
 Style/BlockDelimiters:
-  Description: >-
-    Avoid using {...} for multi-line blocks (multiline chaining is
-    always ugly).
-    Prefer {...} over do...end for single-line blocks.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/CaseEquality:
-  Description: 'Avoid explicit use of the case equality operator(===).'
-  Enabled: false
+  EnforcedStyle: braces_for_chaining
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
 Style/ClassAndModuleChildren:
   Description: 'Checks style of children classes and modules.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/PreferredHashMethods:
-  Description: 'Checks for use of deprecated Hash methods.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -136,19 +123,8 @@ Style/Documentation:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/DoubleNegation:
-  Description: 'Checks for uses of double negation (!!).'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/Encoding:
   Description: 'Use UTF-8 as the source file encoding.'
-  Enabled: false
-
-# TODO: duplicate (other-excludes.yml), remove
-Style/FormatString:
-  Description: 'Enforce the use of Kernel#sprintf, Kernel#format or String#%.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
