@@ -139,12 +139,6 @@ Style/GuardClause:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/IfWithSemicolon:
-  Description: 'Never use if x; .... Use the ternary operator instead.'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/Lambda:
   Description: 'Use the new lambda literal syntax for single-line blocks.'
   Enabled: false
