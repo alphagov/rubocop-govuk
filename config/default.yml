@@ -6,6 +6,7 @@ AllCops:
     - 'tmp/**/*'
     - 'db/schema.rb'
     - 'db/migrate/201*'
+    - 'vendor/**/*'
 
   DisplayCopNames:
     Description: 'Display cop names in offense messages'
