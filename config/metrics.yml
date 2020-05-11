@@ -1,16 +1,17 @@
-# Introduced in: 195e1d6934e610efed35151cfe90b01b805d7581
-# Introduced in: b7a98b43a4b0644b8d4ac40aa3ddaf35f06fa58f
-# "Many test frameworks use blocks for the entire test
-# case in a file as well as for individual tests within the file.
-# It's not unusual for a test case to be several lines
-# longer than the upper limit of the BlockLength cop,
-# and there's very little we can do to avoid that so
-# there's no point running this cop on our tests."
+# Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
+#
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+#
+# For this Cop, there are also several kinds of file that
+# have long blocks by convention (tests, config, rake tasks,
+# gemspecs), to the point where its value is dubious.
 Metrics/BlockLength:
   Enabled: true
   Exclude:
     - test/**/*
     - "**/spec/**/*"
+    - config/routes.rb
   ExcludedMethods: ["namespace"]
 
 # Introduced in: 736b3d295f88b9ba6676fc168b823535582388c2
