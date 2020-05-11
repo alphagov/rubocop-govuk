@@ -1,3 +1,23 @@
+# 3.9.0
+
+* Enable Style/Alias (#60)
+* Enable Style/AsciiComments (#60)
+* Enable Style/BlockDelimiters (#60)
+* Enable Style/CaseEquality (#60)
+* Enable Style/PreferredHashMethods (#60)
+* Enable Style/DoubleNegation (#60)
+* Enable Style/FormatString (#60)
+* Enable Style/Encoding (#64)
+* Enable Style/IfWithSemicolon (#64)
+* Enable Style/Lambda (#64)
+* Enable Style/LambdaCall (#64)
+* Enable Style/ModuleFunction (#64)
+* Enable Style/NilComparison (#64)
+* Enable Style/SignalException (#64)
+* Enable Style/SingleLineMethods (#64)
+* Enable Style/CommandLiteral (#64)
+* Disable Metrics/BlockLength (#65, #68)
+
 # 3.8.0
 
 * Enable check for flip-flops (#55)
