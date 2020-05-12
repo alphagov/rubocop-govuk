@@ -1,5 +1,10 @@
 # Unreleased
 
+* Enable Style/NegatedIf (#71)
+* Enable Style/GlobalVars (#71)
+* Enable Style/RaiseArgs (#71)
+* Enable Style/MethodDefParentheses (#71)
+* Enable Style/NumericLiterals (#71)
 * Enable Layout/MultilineArrayLineBreaks (#63)
 * Enable Layout/MultilineHashKeyLineBreaks (#63)
 * Enable Layout/MultilineMethodArgumentLineBreaks (#63)
