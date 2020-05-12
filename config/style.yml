@@ -153,13 +153,6 @@ Style/Next:
   Description: 'Use `next` to skip iteration instead of a condition at the end.'
   Enabled: false
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here! Suggest enabling with
-# "EnforcedStyle: compact"
-Style/RaiseArgs:
-  Description: 'Checks the arguments passed to raise/fail.'
-  Enabled: false
-
 # Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
 # "Disable opinionated cops"
 #
