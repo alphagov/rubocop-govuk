@@ -1,4 +1,4 @@
-# Unreleased
+# 3.10.0
 
 * Enable Style/NegatedIf (#71)
 * Enable Style/GlobalVars (#71)
