@@ -149,14 +149,6 @@ Style/GuardClause:
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
 # TODO: unclear why this is here!
-Style/MethodDefParentheses:
-  Description: >-
-    Checks if the method definitions have or don't have
-    parentheses.
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
 Style/NegatedIf:
   Description: >-
     Favor unless over if for negative conditions
