@@ -80,6 +80,16 @@ Style/StringLiterals:
 Style/FormatStringToken:
   Enabled: false
 
+# Using the default style leads to buggy auto-correct in several
+# repos that have their own 'format' method defined. While it's not
+# ideal to override a standard/Kernel method, it's also not practical
+# to change a term that's so deeply embedded within our domain.
+#
+# Related PR: https://github.com/alphagov/specialist-publisher/pull/1640
+# Related PR: https://github.com/alphagov/publisher/pull/1268
+Style/FormatString:
+  EnforcedStyle: sprintf
+
 # This is a contentious issue, since 'alias_method' works in
 # all circumstances, whereas 'alias' only works lexically. As
 # with single vs. double quotes, it seems pointless to expend
