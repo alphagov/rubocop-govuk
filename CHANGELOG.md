@@ -1,3 +1,10 @@
+# Unreleased
+
+* Enable Layout/MultilineArrayLineBreaks (#63)
+* Enable Layout/MultilineHashKeyLineBreaks (#63)
+* Enable Layout/MultilineMethodArgumentLineBreaks (#63)
+* Enable 	Layout/FirstMethodArgumentLineBreak (#63)
+
 # 3.9.0
 
 * Enable Style/Alias (#60)
