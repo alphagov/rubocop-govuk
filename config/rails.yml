@@ -19,8 +19,11 @@ Rails/Output:
   Exclude:
     - 'lib/**/*.rb'
 
-# Introduced in: 91d7bf4895db12727582ad7bf47bdcb20ab178f7
-# TODO: unclear (in any real detail) why this is here!
+# It's unclear what remedial action to take for the total
+# set of methods this Cop has issues with. For example, we
+# use 'update_all' in many of our repos, for which there is
+# no efficient alternative. Instead, we should only enable
+# this Cop for methods that have a clear alternative.
 Rails/SkipsModelValidations:
-  Description: 'Avoid methods that skip model validations.'
-  Enabled: false
+  Blacklist:
+    - update_attribute
