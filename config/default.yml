@@ -22,7 +22,6 @@ AllCops:
     Enabled: true
 
 inherit_from:
-  - bundler.yml
   - layout.yml
   - metrics.yml
   - naming.yml
