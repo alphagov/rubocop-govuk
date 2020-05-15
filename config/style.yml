@@ -5,21 +5,18 @@
 # line statements to re-written makes it a harder
 # to follow the branching logic."
 Style/IfUnlessModifier:
-  Description: Favor modifier if/unless usage when you have a single-line body.
   Enabled: false
 
 # Part of the orignal GDS styleguide
 # "Never chain do...end"
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
 Style/MethodCalledOnDoEndBlock:
-  Description: Avoid chaining a method call on a do...end block.
   Enabled: true
 
 # Part of the orignal GDS styleguide
 # "Omit the parentheses when the method doesn’t accept any arguments"
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
 Style/MethodCallWithoutArgsParentheses:
-  Description: 'Do not use parentheses for method calls with no arguments.'
   Enabled: true
 
 # Part of the orignal GDS styleguide
@@ -130,7 +127,6 @@ Style/ClassAndModuleChildren:
 # more documentation is the potential for confusion if that
 # documentation gets out-of-sync with the class/module.
 Style/Documentation:
-  Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -140,7 +136,6 @@ Style/Documentation:
 # "There are occasions where following this rule forces you to make the
 # code less readable."
 Style/GuardClause:
-  Description: 'Check for conditionals that can be replaced with guard clauses'
   Enabled: false
 
 # Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
@@ -149,11 +144,6 @@ Style/GuardClause:
 # We should avoid cops that are based on heuristics, since
 # it's not clear what action to take to fix an issue.
 Style/RegexpLiteral:
-  Description: >-
-    Use %r for regular expressions matching more than
-    `MaxSlashes` '/' characters.
-    Use %r only for regular expressions matching more than
-    `MaxSlashes` '/' character.
   Enabled: false
 
 # Using safe navigation is less explicit than making a clear
