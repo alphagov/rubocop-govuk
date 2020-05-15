@@ -13,11 +13,11 @@ AllCops:
 Rails:
   Enabled: true
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# We commonly print output in Ruby code that has been
+# extracted from a Rake task in 'lib/'.
 Rails/Output:
-  Description: 'Checks for calls to puts, print, etc.'
-  Enabled: false
+  Exclude:
+    - 'lib/**/*.rb'
 
 # Introduced in: 91d7bf4895db12727582ad7bf47bdcb20ab178f7
 # TODO: unclear (in any real detail) why this is here!
