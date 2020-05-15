@@ -156,14 +156,11 @@ Style/RegexpLiteral:
     `MaxSlashes` '/' character.
   Enabled: false
 
-# Introduced in: 7aaebf4dbdf2a8d677b4000d3cd3512d4fb91e99
-# "This is a relatively new Ruby feature and is not mentioned in the Style
-# guide, so this commit disables it by default."
-# TODO: unclear why this is here!
+# Using safe navigation is less explicit than making a clear
+# check for truthiness, as evidenced by its own safelist for
+# certain methods. Safe navigation is also less visible and
+# pollutes otherwise readable method calls.
 Style/SafeNavigation:
-  Description: >-
-    This cop transforms usages of a method call safeguarded by a check for the
-    existance of the object to safe navigation (`&.`).
   Enabled: false
 
 # We should allow for single line empty methods, as this
