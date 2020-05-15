@@ -116,10 +116,12 @@ Style/AsciiComments:
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# We have no concensus on this. Using the nested style is the
+# default for generated Rails app (see 'config/application.rb').
+# Using the compact style can help to reduce boilerplate within
+# modules. At the time of writing, the auto-correct for this Cop
+# is unsafe for moving to either style.
 Style/ClassAndModuleChildren:
-  Description: 'Checks style of children classes and modules.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
