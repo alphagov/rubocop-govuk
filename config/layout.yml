@@ -2,7 +2,6 @@
 # "Use empty lines between defs and to break up a method into logical paragraphs."
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#general
 Layout/EmptyLineBetweenDefs:
-  Description: Use empty lines between defs.
   Enabled: true
   AllowAdjacentOneLineDefs: false
 
@@ -12,7 +11,6 @@ Layout/EmptyLineBetweenDefs:
 # names form the test descriptions. Keeping test descriptions under a
 # certain length can force them to become cryptic."
 Layout/LineLength:
-  Description: Limit lines to 80 characters.
   Enabled: false
 
 # We have two styles of method call in our apps:
@@ -33,7 +31,6 @@ Layout/MultilineMethodCallIndentation:
 # "Outdent private etc"
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#classes
 Layout/AccessModifierIndentation:
-  Description: Check indentation of private/protected visibility modifiers.
   Enabled: true
   EnforcedStyle: outdent
 

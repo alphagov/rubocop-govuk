@@ -5,21 +5,18 @@
 # line statements to re-written makes it a harder
 # to follow the branching logic."
 Style/IfUnlessModifier:
-  Description: Favor modifier if/unless usage when you have a single-line body.
   Enabled: false
 
 # Part of the orignal GDS styleguide
 # "Never chain do...end"
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
 Style/MethodCalledOnDoEndBlock:
-  Description: Avoid chaining a method call on a do...end block.
   Enabled: true
 
 # Part of the orignal GDS styleguide
 # "Omit the parentheses when the method doesn’t accept any arguments"
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
 Style/MethodCallWithoutArgsParentheses:
-  Description: 'Do not use parentheses for method calls with no arguments.'
   Enabled: true
 
 # Part of the orignal GDS styleguide
@@ -116,10 +113,12 @@ Style/AsciiComments:
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# We have no concensus on this. Using the nested style is the
+# default for generated Rails app (see 'config/application.rb').
+# Using the compact style can help to reduce boilerplate within
+# modules. At the time of writing, the auto-correct for this Cop
+# is unsafe for moving to either style.
 Style/ClassAndModuleChildren:
-  Description: 'Checks style of children classes and modules.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -128,7 +127,6 @@ Style/ClassAndModuleChildren:
 # more documentation is the potential for confusion if that
 # documentation gets out-of-sync with the class/module.
 Style/Documentation:
-  Description: 'Document classes and non-namespace modules.'
   Enabled: false
 
 # Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
@@ -138,13 +136,6 @@ Style/Documentation:
 # "There are occasions where following this rule forces you to make the
 # code less readable."
 Style/GuardClause:
-  Description: 'Check for conditionals that can be replaced with guard clauses'
-  Enabled: false
-
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
-Style/Next:
-  Description: 'Use `next` to skip iteration instead of a condition at the end.'
   Enabled: false
 
 # Analog of: 736b3d295f88b9ba6676fc168b823535582388c2
@@ -153,21 +144,13 @@ Style/Next:
 # We should avoid cops that are based on heuristics, since
 # it's not clear what action to take to fix an issue.
 Style/RegexpLiteral:
-  Description: >-
-    Use %r for regular expressions matching more than
-    `MaxSlashes` '/' characters.
-    Use %r only for regular expressions matching more than
-    `MaxSlashes` '/' character.
   Enabled: false
 
-# Introduced in: 7aaebf4dbdf2a8d677b4000d3cd3512d4fb91e99
-# "This is a relatively new Ruby feature and is not mentioned in the Style
-# guide, so this commit disables it by default."
-# TODO: unclear why this is here!
+# Using safe navigation is less explicit than making a clear
+# check for truthiness, as evidenced by its own safelist for
+# certain methods. Safe navigation is also less visible and
+# pollutes otherwise readable method calls.
 Style/SafeNavigation:
-  Description: >-
-    This cop transforms usages of a method call safeguarded by a check for the
-    existance of the object to safe navigation (`&.`).
   Enabled: false
 
 # We should allow for single line empty methods, as this

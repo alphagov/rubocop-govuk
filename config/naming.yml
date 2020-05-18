@@ -13,8 +13,9 @@
 Naming/AccessorMethodName:
   Enabled: false
 
-# Introduced in: c69a7eb3af955d6c4c0cf0c3cec8e9f330c74429
-# TODO: unclear why this is here!
+# We should be free to decide on interfaces that make sense to us.
+# At the time of writing, this Cop is not auto-correctable, and
+# would generate a prohibitively high number of issues across our
+# repos, which would require manual intervention.
 Naming/PredicateName:
-  Description: 'Check the names of predicate methods.'
   Enabled: false

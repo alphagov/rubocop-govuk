@@ -1,3 +1,11 @@
+# Unversioned
+
+- Enable Style/Next (#74)
+- Partially enable Rails/SkipsModelValidations (#74)
+- Partially enable Rails/Output (#74)
+- Enable Rails/HasAndBelongsToMany (#74)
+- Enable Bundler/DuplicatedGem (#74)
+
 # 3.10.0
 
 * Enable Style/NegatedIf (#71)
