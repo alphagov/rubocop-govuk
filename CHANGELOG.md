@@ -1,5 +1,6 @@
-# Unversioned
+# 3.11.0
 
+- Add optional config for RSpec Cops (#75)
 - Enable Style/Next (#74)
 - Partially enable Rails/SkipsModelValidations (#74)
 - Partially enable Rails/Output (#74)
