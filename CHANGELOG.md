@@ -1,3 +1,7 @@
+# 3.12.0
+
+- Disable Rails/HasAndBelongsToMany (#77)
+
 # 3.11.0
 
 - Add optional config for RSpec Cops (#75)
