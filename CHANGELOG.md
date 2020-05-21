@@ -1,3 +1,7 @@
+# Unversioned
+
+- Disable Layout/FirstMethodArgumentLineBreak (#79)
+
 # 3.12.0
 
 - Disable Rails/HasAndBelongsToMany (#77)

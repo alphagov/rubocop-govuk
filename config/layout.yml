@@ -90,10 +90,3 @@ Layout/MultilineHashKeyLineBreaks:
 # and avoids wasting time tweaking an arbitrary layout.
 Layout/MultilineMethodArgumentLineBreaks:
   Enabled: true
-
-# We should put each argument of a method call on a new line,
-# if any are on new lines. This prevents unnecessary decisions
-# about which style to use; the multiline style also helps to
-# avoid excessively long lines.
-Layout/FirstMethodArgumentLineBreak:
-  Enabled: true
