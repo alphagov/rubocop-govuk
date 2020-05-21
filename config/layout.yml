@@ -83,10 +83,3 @@ Layout/MultilineArrayLineBreaks:
 # and avoids wasting time tweaking an arbitrary layout.
 Layout/MultilineHashKeyLineBreaks:
   Enabled: true
-
-# We should be consistent: if some items of a method call are
-# on multiple lines, then all items should be. This works
-# better with the indentation Cops, produces clearer diffs,
-# and avoids wasting time tweaking an arbitrary layout.
-Layout/MultilineMethodArgumentLineBreaks:
-  Enabled: true
