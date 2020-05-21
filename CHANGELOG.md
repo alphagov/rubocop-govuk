@@ -1,4 +1,4 @@
-# Unversioned
+# 3.13.0
 
 - Disable Layout/FirstMethodArgumentLineBreak (#79)
 - Disable Layout/MultilineMethodArgumentLineBreaks (#80)
