@@ -40,3 +40,31 @@ Rails/SkipsModelValidations:
 # relationships are just # many-to-many, and that's it.
 Rails/HasAndBelongsToMany:
   Enabled: false
+
+# While using 'inverse_of' can reduce DB queries, we have
+# not found this to be a problem in practice. The advantage
+# of turning this on would be that we make the inverse
+# behaviour explicit everywhere ActiveRecord can't apply it
+# automatically, but this is rarely a surprise for developers.
+# We also don't want to add 'inverse_of: false' everywhere;
+# at the time of writing, there is no auto-correct for this.
+Rails/InverseOf:
+  Enabled: false
+
+# This is incompatible with the more robust use of foreign
+# key constraints, which provide the same behaviour.
+#
+# Example: https://github.com/alphagov/content-publisher/blob/f26d9b551842fdf2084159b5b7f1bb078da56936/db/schema.rb#L396
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+# We commonly want to render HTML without escaping it, which
+# is what 'html_safe' is for. In many cases, the content we
+# render has already been sanitised (e.g. through Govspeak),
+# or is otherwise trusted e.g. from a content item. We trust
+# that developers will use 'html_safe' responsibly, and prefer
+# the default, escaped output otherwise. At the time of writing,
+# this Cop is disabled in a lot of repos, indicating it offers
+# little value to many developers.
+Rails/OutputSafety:
+  Enabled: false

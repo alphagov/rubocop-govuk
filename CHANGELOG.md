@@ -1,3 +1,9 @@
+# 3.14.0
+
+- Disable Rails/InverseOf
+- Disable Rails/HasManyOrHasOneDependent
+- Disable Rails/OutputSafety
+
 # 3.13.0
 
 - Disable Layout/FirstMethodArgumentLineBreak (#79)
