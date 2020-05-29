@@ -13,6 +13,17 @@ AllCops:
 Rails:
   Enabled: true
 
+# We have custom find_by methods in several repos, which
+# we're not going to rename. This Cop also raises false
+# positives for find_by methods that are unrelated to model
+# classes, as well as for repos using Mongoid. The value
+# of the consistency this brings is limited, since we mostly
+# use find_by(key: value) anyway.
+#
+# https://github.com/rubocop-hq/rubocop/issues/3758
+Rails/DynamicFindBy:
+  Enabled: false
+
 # We commonly print output in Ruby code that has been
 # extracted from a Rake task in 'lib/'.
 Rails/Output:
