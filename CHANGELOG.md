@@ -1,3 +1,7 @@
+# Unversioned
+
+- Disable Rails/DynamicFindBy
+
 # 3.14.0
 
 - Disable Rails/InverseOf
