@@ -14,14 +14,6 @@ Style/MethodCalledOnDoEndBlock:
   Enabled: true
 
 # Part of the orignal GDS styleguide
-# "Use Ruby 1.9 syntax for symbolic hash keys.
-# This includes method calls."
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
-Style/HashSyntax:
-  Exclude:
-  - 'db/schema.rb'
-
-# Part of the orignal GDS styleguide
 # "Add a trailing comma to multi-line array [...]
 # for clearer diffs with less line noise."
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
