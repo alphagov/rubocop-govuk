@@ -2,6 +2,7 @@
 
 - Remove cops that are RuboCop defaults (#88)
 - Disable Rails/DynamicFindBy
+- Permit "and", "but" with RSpec/ContextWording
 
 # 3.14.0
 
