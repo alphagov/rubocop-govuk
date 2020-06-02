@@ -139,11 +139,6 @@ Style/RegexpLiteral:
 Style/SafeNavigation:
   Enabled: false
 
-# We should allow for single line empty methods, as this
-# is a convention for Rails controller actions.
-Style/SingleLineMethods:
-  AllowIfMethodIsEmpty: true
-
 # Introduced in: b171d652d3e434b74ddc621df3b5be24c49bc7e8
 # This cop was added in preperation for a Ruby feature
 # that is no longer likely to become part of the language.
