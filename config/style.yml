@@ -14,12 +14,6 @@ Style/MethodCalledOnDoEndBlock:
   Enabled: true
 
 # Part of the orignal GDS styleguide
-# "Omit the parentheses when the method doesn’t accept any arguments"
-# https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#syntax
-Style/MethodCallWithoutArgsParentheses:
-  Enabled: true
-
-# Part of the orignal GDS styleguide
 # "Use Ruby 1.9 syntax for symbolic hash keys.
 # This includes method calls."
 # https://github.com/alphagov/styleguides/blob/6395a10d41c3938f4c147cda443fd83f854c3e7a/ruby.md#collections
