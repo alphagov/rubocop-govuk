@@ -1,5 +1,6 @@
 # Unversioned
 
+- Remove cops that are RuboCop defaults (#88)
 - Disable Rails/DynamicFindBy
 
 # 3.14.0
