@@ -35,3 +35,13 @@ RSpec/MessageSpies:
 # it's not clear what action to take to fix an issue.
 RSpec/NestedGroups:
   Enabled: false
+
+# Nested contexts make more sense with "and" or "but", since
+# they are a refinement of an outer context.
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - and
+    - but
