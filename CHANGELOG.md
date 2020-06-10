@@ -1,3 +1,8 @@
+# 3.16.0
+
+- Bump and lock rubocop-rails to 2.6.0
+- Bump and lock rubocop-rspec to 1.39.0
+
 # 3.15.0
 
 - Remove cops that are RuboCop defaults (#88)
