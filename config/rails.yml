@@ -79,3 +79,9 @@ Rails/HasManyOrHasOneDependent:
 # little value to many developers.
 Rails/OutputSafety:
   Enabled: false
+
+# We seldom check the return value of 'update' to see if
+# the operation was successful. Since we assume success, we
+# should raise an exception if this is not the case.
+Rails/SaveBang:
+  Enabled: true
