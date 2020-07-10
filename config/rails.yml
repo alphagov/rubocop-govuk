@@ -85,3 +85,10 @@ Rails/OutputSafety:
 # should raise an exception if this is not the case.
 Rails/SaveBang:
   Enabled: true
+
+# We should avoid unnecessary ambiguity between 'Time.current'
+# and 'Time.zone.now', where 'Time.current' behaves differently
+# depending on application config. We should always be explicit
+# about whether we mean 'Time[.zone].now'.
+Rails/TimeZone:
+  EnforcedStyle: "strict"
