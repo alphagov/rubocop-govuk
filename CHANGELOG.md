@@ -1,3 +1,11 @@
+# 3.17.0
+
+- Enable Rails/SaveBang
+- Enable Style/DateTime
+- Enforce strict Time.zone.now
+- Bump rubocop to 0.87.1
+- Bump rubocop-rspec to 1.42.0
+
 # 3.16.0
 
 - Bump and lock rubocop-rails to 2.6.0

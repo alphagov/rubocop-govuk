@@ -145,3 +145,11 @@ Style/SafeNavigation:
 # https://github.com/rubocop-hq/rubocop/issues/7197
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+# We should only use DateTime when it's necessary to account
+# for ancient calendar changes. Otherwise, the arbitrary use
+# of this class in place of Date or Time is confusing.
+#
+# https://rubystyle.guide/#no-datetime
+Style/DateTime:
+  Enabled: true
