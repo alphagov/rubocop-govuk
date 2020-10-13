@@ -1,3 +1,7 @@
+# 3.17.1
+
+- Pin rubocop-ast to 0.8.0
+
 # 3.17.0
 
 - Enable Rails/SaveBang
