@@ -36,7 +36,7 @@ Rails/Output:
 # no efficient alternative. Instead, we should only enable
 # this Cop for methods that have a clear alternative.
 Rails/SkipsModelValidations:
-  Blacklist:
+  ForbiddenMethods:
     - update_attribute
 
 # While using has_many/through does have some advantages,
