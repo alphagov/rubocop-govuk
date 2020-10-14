@@ -1,3 +1,7 @@
+# 3.17.2
+
+- Rename Blacklist to ForbiddenMethods to fix rubocop-rails warnings
+
 # 3.17.1
 
 - Pin rubocop-ast to 0.8.0
