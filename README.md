@@ -8,7 +8,7 @@ Add `rubocop-govuk` to your Gemfile and then run `bundle install`:
 
 ```ruby
 # Gemfile
-gem 'rubocop-govuk'
+gem 'rubocop-govuk', require: false
 ```
 
 Then inherit the default rules by adding the following in your project:
