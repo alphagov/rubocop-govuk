@@ -11,11 +11,13 @@ Gem::Specification.new do |spec|
 
   spec.files         = Dir["config/**/*", "*.md"]
 
+  spec.required_ruby_version = ">= 2.6"
+
   spec.add_development_dependency "rake", "~> 13"
 
-  spec.add_dependency "rubocop", "0.87.1"
-  spec.add_dependency "rubocop-ast", "0.8.0"
-  spec.add_dependency "rubocop-rails", "2.8.1"
+  spec.add_dependency "rubocop", "~> 1.7.0"
+  spec.add_dependency "rubocop-ast", "~> 1.4.0"
+  spec.add_dependency "rubocop-rails", "~> 2.9.1"
   spec.add_dependency "rubocop-rake", "0.5.1"
-  spec.add_dependency "rubocop-rspec", "1.42.0"
+  spec.add_dependency "rubocop-rspec", "~> 2.1.0"
 end
