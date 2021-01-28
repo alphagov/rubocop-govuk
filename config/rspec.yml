@@ -10,6 +10,11 @@ inherit_from:
 RSpec/ExampleLength:
   Enabled: false
 
+# We should avoid cops that are based on heuristics, since
+# it's not clear what action to take to fix an issue.
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
 # We have common cases, such as rake tasks, where we do not
 # use a class to the describe the test.
 RSpec/DescribeClass:
