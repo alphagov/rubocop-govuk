@@ -19,3 +19,10 @@ Naming/AccessorMethodName:
 # repos, which would require manual intervention.
 Naming/PredicateName:
   Enabled: false
+
+# This rule can cause readability issues when applied (for example
+# `born_on_or_before_6_april_1935` becomes `born_on_or_before_6april1935`)
+# and would require lots of amends to apply either `normalcase`
+# or `snake_case` to projects. It is not auto-correctable.
+Naming/VariableNumber:
+  Enabled: false
