@@ -11,6 +11,7 @@
 - Downgrade local Ruby version to `2.6.6` to capture lowest supported
   Ruby version
 - Fix namespace change of `Capybara/FeatureMethods`
+- Disable `Naming/VariableNumbers`
 
 # 3.17.2
 
