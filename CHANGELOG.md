@@ -1,3 +1,17 @@
+# Unreleased
+
+- Update rubocop to 1.7.0
+- Update rubocop-ast to 1.4.0
+- Update rubocop-rails to 2.9.1
+- Update rubocop-rspec to 2.1.0
+- Make stable dependencies (>= 1.0) less strict on patch version
+- Disable `SuggestExtensions` to stop Rubocop suggesting additional
+  extensions at runtime
+- Explicitly set target Ruby version to `>= 2.6` in gemspec
+- Downgrade local Ruby version to `2.6.6` to capture lowest supported
+  Ruby version
+- Fix namespace change of `Capybara/FeatureMethods`
+
 # 3.17.2
 
 - Rename Blacklist to ForbiddenMethods to fix rubocop-rails warnings

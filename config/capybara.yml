@@ -1,5 +1,5 @@
 # Within GOV.UK we use Capybara test method syntax of feature,
 # scenario. We don't want this outside of feature specs though.
-Capybara/FeatureMethods:
+RSpec/Capybara/FeatureMethods:
   Exclude:
     - 'spec/features/**/*.rb'
