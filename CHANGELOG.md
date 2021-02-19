@@ -1,9 +1,14 @@
-# Unreleased
+# 4.0.0.pre-1
 
-- Update rubocop to 1.7.0
+- Released as a pre-release to try surface any issues before wider rollout,
+  use https://github.com/alphagov/rubocop-govuk/issues/129 to record any
+  problems
+- BREAKING: Upgraded from Rubocop 0.x to 1.x which introduces lots of new
+  cops
+- Update rubocop to 1.10.0
 - Update rubocop-ast to 1.4.0
 - Update rubocop-rails to 2.9.1
-- Update rubocop-rspec to 2.1.0
+- Update rubocop-rspec to 2.2.0
 - Make stable dependencies (>= 1.0) less strict on patch version
 - Disable `SuggestExtensions` to stop Rubocop suggesting additional
   extensions at runtime
