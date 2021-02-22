@@ -1,4 +1,4 @@
-# 4.0.0.pre-1
+# 4.0.0.pre.1
 
 - Released as a pre-release to try surface any issues before wider rollout,
   use https://github.com/alphagov/rubocop-govuk/issues/129 to record any
@@ -17,6 +17,10 @@
   Ruby version
 - Fix namespace change of `Capybara/FeatureMethods`
 - Disable `Naming/VariableNumbers`
+
+# 4.0.0.pre.pre.1
+
+- Mistakenly named release, same as 4.0.0.pre.1
 
 # 3.17.2
 
