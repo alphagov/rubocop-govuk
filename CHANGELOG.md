@@ -1,3 +1,10 @@
+# 4.0.0
+
+- Update rubocop to 1.15.0
+- Update rubocop-ast to 1.6.0
+- Update rubocop-rails to 2.10.0
+- Update rubocop-rspec to 2.3.0
+
 # 4.0.0.pre.1
 
 - Released as a pre-release to try surface any issues before wider rollout,
