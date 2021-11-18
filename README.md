@@ -42,6 +42,27 @@ inherit_gem:
     - config/rspec.yml
 ```
 
+It's also worth including the following to encourage contributions:
+
+```yaml
+# rubocop.yml
+inherit_gem:
+  ...
+
+inherit_mode:
+  ...
+
+# **************************************************************
+# TRY NOT TO ADD OVERRIDES IN THIS FILE
+#
+# This repo is configured to follow the RuboCop GOV.UK styleguide.
+# Any rules you override here will cause this repo to diverge from
+# the way we write code in all other GOV.UK repos.
+#
+# See https://github.com/alphagov/rubocop-govuk/blob/main/CONTRIBUTING.md
+# **************************************************************
+```
+
 ## Testing
 
 Run `bundle exec rake`.
