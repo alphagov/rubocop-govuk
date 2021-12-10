@@ -23,7 +23,7 @@ jobs:
     - run: gem update --system
 
     - env:
-        GEM_HOST_API_KEY: ${{ secrets.GEM_HOST_API_KEY }}
+        GEM_HOST_API_KEY: ${{ secrets.ALPHAGOV_RUBYGEMS_API_KEY }}
       run: |
         VERSION=$(ruby -e "puts eval(File.read('rubocop-govuk.gemspec')).version")
         GEM_VERSION=$(gem list --exact --remote rubocop-govuk)
