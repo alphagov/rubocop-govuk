@@ -50,3 +50,5 @@ RSpec/ContextWording:
     - without
     - and
     - but
+    - before
+    - after
