@@ -1,3 +1,7 @@
+# Unreleased
+
+- Drop support for Ruby 2.6
+
 # 4.3.0
 
 - Update rubocop to 1.25.0
