@@ -12,30 +12,9 @@ jobs:
 
   release:
     needs: test
-    runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' }}
+    # if: ${{ github.ref == 'refs/heads/main' }}
     permissions:
       contents: write
-    steps:
-    - uses: actions/checkout@v2
-    - uses: ruby/setup-ruby@v1
-
-      # Update to >= v3.0.5
-      # https://gitlab.com/gitlab-org/gitlab-qa/-/issues/431
-    - run: gem update --system
-
-    - env:
-        GEM_HOST_API_KEY: ${{ secrets.ALPHAGOV_RUBYGEMS_API_KEY }}
-      run: |
-        VERSION=$(ruby -e "puts eval(File.read('rubocop-govuk.gemspec')).version")
-        GEM_VERSION=$(gem list --exact --remote rubocop-govuk)
-
-        if [ "${GEM_VERSION}" != "rubocop-govuk (${VERSION})" ]; then
-          gem build rubocop-govuk.gemspec
-          gem push "rubocop-govuk-${VERSION}.gem"
-        fi
-
-        if ! git ls-remote --tags --exit-code origin v${VERSION}; then
-          git tag v${VERSION}
-          git push --tags
-        fi
+    uses: alphagov/govuk-infrastructure/.github/workflows/publish-rubygem.yaml@publish-gem
+    secrets:
+      GEM_HOST_API_KEY: ${{ secrets.ALPHAGOV_RUBYGEMS_API_KEY }}
