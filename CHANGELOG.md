@@ -1,3 +1,8 @@
+# 4.5.0
+
+- Update rubocop to 1.30.0
+- Update rubocop-ast to 1.18.0
+
 # 4.4.0
 
 - Update rubocop to 1.27.0
