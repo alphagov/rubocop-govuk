@@ -29,11 +29,7 @@ RuboCop GOV.UK is a styleguide, so each rule in each YAML file should have a com
 
 Find out how much effort it will be to adopt your changes in typical GOV.UK repos. This could just be running `rubocop -A` to autocorrect new issues, or it could involve significant manual effort.
 
-You can test changes locally by tweaking the Gemfile or `.gemspec` for the repo e.g.
-
-```
-gem "rubocop-govuk", path: "/govuk/rubocop-govuk"
-```
+You can test changes against an alphagov repo by [running the GitHub worflow](https://github.com/alphagov/rubocop-govuk/actions/workflows/run-against-project.yml) we have configured.
 
 This is a rough list of typical GOV.UK repos we recommend testing against:
 
