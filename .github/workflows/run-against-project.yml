@@ -1,0 +1,51 @@
+# GitHub Workflow to allow running rubocop-govuk against an alphagov repo
+# to test the effects of linting rules prior to releasing the gem.
+#
+# This is expected to be called manually via the GitHub UI (https://github.com/alphagov/rubocop-govuk/actions/workflows/run-against-project.yml)
+# or via the GitHub CLI.
+name: Run against project
+run-name: Running rubocop-govuk (${{ inputs.git_ref }}) against ${{ inputs.alphagov_repo }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      alphagov_repo:
+        description: 'The alphagov repository to run rubocop-govuk against'
+        required: true
+        type: string
+      git_ref:
+        description: 'Commit, tag or branch name of rubocop-govuk to use'
+        required: true
+        type: string
+        default: 'main'
+
+jobs:
+  lint_project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloning alphagov/${{ inputs.alphagov_repo }}
+        uses: actions/checkout@v3
+        with:
+          repository: alphagov/${{ inputs.alphagov_repo }}
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      # We need to turn off deployment mode so that we can modify the gems
+      - run: bundle config unset deployment
+      - run: bundle remove rubocop-govuk
+      # There is a `bundle add --github --ref` command we could have used,
+      # however the output of that falls foul of our linter (how ironic).
+      # Instead of fighting/correcting/accepting that we have this work
+      # around of amending the gemfile ourselves and running bundle install
+      # again.
+      - name: Amending gemfile for rubocop-govuk (${{ inputs.git_ref }})
+        run: |
+          printf '\ngem "rubocop-govuk", github: "alphagov/rubocop-govuk", ref: "${{ inputs.git_ref }}"\n' >> Gemfile
+      - name: Install rubcop-govuk gem
+        run: bundle install
+      - name: Run rubocop
+        run: |
+          # preserve exit code if rubocop fails
+          set -o pipefail
+          # use tee to output to stdout and populate GitHub summary
+          bundle exec rubocop --format markdown | tee $GITHUB_STEP_SUMMARY
