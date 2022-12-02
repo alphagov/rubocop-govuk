@@ -57,3 +57,8 @@ inherit_gem:
 ## Contributing
 
 Rules in this repo are defined based on their compatibility with GOV.UK apps and their code conventions. Everyone else is welcome to use it and suggest changes - see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+## Licence
+
+[MIT License](LICENCE)
+
