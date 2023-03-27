@@ -1,3 +1,7 @@
+## Unreleased
+
+* Drop support for Ruby 2.7.
+
 # 4.10.0
 
 - Update rubocop to 1.44.1
