@@ -1,6 +1,11 @@
-## Unreleased
+## 4.11.0
 
-* Drop support for Ruby 2.7.
+- Drop support for Ruby 2.7.
+- Update rubocop to 1.53.1
+- Update rubocop-ast to 1.29.0
+- Update rubocop-rails 2.20.2
+- Update rubocop-rake to 0.6.0
+- Update rubocop-rspec to 2.22.0
 
 # 4.10.0
 
