@@ -1,3 +1,7 @@
+## 4.12.0
+
+- Update rubocop to 1.55.0
+
 ## 4.11.0
 
 - Drop support for Ruby 2.7.
