@@ -1,3 +1,10 @@
+## 4.14.0
+
+- Update rubocop to 1.60.2
+- Update rubocop-rails to 2.23.1
+- Update rubocop-rspec to 2.26.1
+- Add Snyk scans to CI pipeline
+
 ## 4.13.0
 
 - Update rubocop to 1.59.0
