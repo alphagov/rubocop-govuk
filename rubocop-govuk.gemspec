@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = Dir["config/**/*", "*.md"]
 
-  spec.required_ruby_version = ">= 3.3"
+  spec.required_ruby_version = ">= 3.1.4"
 
   spec.add_development_dependency "rake", "~> 13"
 
