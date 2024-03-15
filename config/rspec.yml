@@ -29,6 +29,7 @@ RSpec/MultipleExpectations:
 RSpec/InstanceVariable:
   Exclude:
     - 'spec/features/**/*.rb'
+    - 'spec/system/**/*.rb'
 
 # In GOV.UK we quite often test that a class received a method.
 RSpec/MessageSpies:

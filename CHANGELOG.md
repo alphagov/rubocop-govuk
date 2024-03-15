@@ -1,3 +1,7 @@
+## Unreleased
+
+- Apply feature spec exemptions to system specs
+
 ## 4.15.0
 
 - Update rubocop to 1.62.1
