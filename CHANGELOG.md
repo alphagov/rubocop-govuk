@@ -1,3 +1,10 @@
+## 4.15.0
+
+- Update rubocop to 1.62.1
+- Update rubocop-ast to 1.31.2
+- Update rubocop-rails to 2.24.0
+- Update rubocop-rspec to 2.27.1
+
 ## 4.14.0
 
 - Update rubocop to 1.60.2
