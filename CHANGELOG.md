@@ -1,3 +1,8 @@
+## 4.16.0
+
+- Disable `Style/MultilineBlockChain`
+- Update rubocop-rails to 2.24.1
+
 ## 4.15.0
 
 - Update rubocop to 1.62.1
