@@ -153,3 +153,10 @@ Style/FrozenStringLiteralComment:
 # https://rubystyle.guide/#no-datetime
 Style/DateTime:
   Enabled: true
+
+# This rule conflicts with Style/BlockDelimiters.
+# Style/MultilineBlockChain says use do...end instead of {...} for multi-line blocks,
+# but Style/BlockDelimiters says use {...} instead of do...end when chaining.
+# The latter should take priority over the former, because it leads to more readable code.
+Style/MultilineBlockChain:
+  Enabled: false
