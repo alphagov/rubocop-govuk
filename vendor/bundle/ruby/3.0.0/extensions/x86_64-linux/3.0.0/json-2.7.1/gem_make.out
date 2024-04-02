@@ -1,0 +1,13 @@
+current directory: /home/runner/work/rubocop-govuk/rubocop-govuk/vendor/bundle/ruby/3.0.0/gems/json-2.7.1/ext/json
+/opt/hostedtoolcache/Ruby/3.0.5/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/3.0.5/x64/lib/ruby/3.0.0 -r ./siteconf20240304-1799-b4onax.rb extconf.rb
+creating Makefile
+
+current directory: /home/runner/work/rubocop-govuk/rubocop-govuk/vendor/bundle/ruby/3.0.0/gems/json-2.7.1/ext/json
+make DESTDIR\= clean
+
+current directory: /home/runner/work/rubocop-govuk/rubocop-govuk/vendor/bundle/ruby/3.0.0/gems/json-2.7.1/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: /home/runner/work/rubocop-govuk/rubocop-govuk/vendor/bundle/ruby/3.0.0/gems/json-2.7.1/ext/json
+make DESTDIR\= install

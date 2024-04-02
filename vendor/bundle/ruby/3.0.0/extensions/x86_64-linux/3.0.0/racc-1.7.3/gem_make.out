@@ -1,0 +1,15 @@
+current directory: /home/runner/work/rubocop-govuk/rubocop-govuk/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+/opt/hostedtoolcache/Ruby/3.0.5/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/3.0.5/x64/lib/ruby/3.0.0 -r ./siteconf20240304-1799-ip5zvo.rb extconf.rb
+creating Makefile
+
+current directory: /home/runner/work/rubocop-govuk/rubocop-govuk/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= clean
+
+current directory: /home/runner/work/rubocop-govuk/rubocop-govuk/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\=
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/runner/work/rubocop-govuk/rubocop-govuk/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240304-1799-m1xb7a/racc
