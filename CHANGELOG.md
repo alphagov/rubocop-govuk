@@ -1,3 +1,7 @@
+# 4.16.1
+
+* Update dependencies
+
 ## 4.16.0
 
 - Disable `Style/MultilineBlockChain`
