@@ -1,3 +1,7 @@
+## Unreleased
+
+- Apply feature spec exemptions to system specs
+
 # 4.16.1
 
 * Update dependencies
