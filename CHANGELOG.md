@@ -1,6 +1,9 @@
-## Unreleased
+# 4.17.0
 
 - Apply feature spec exemptions to system specs
+- Update rubocop to 1.63.5
+- Update rubocop-rspec to 2.29.2
+- Update rubocop-ast to 1.31.3
 
 # 4.16.1
 
