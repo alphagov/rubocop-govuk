@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "rubocop-govuk"
-  spec.version       = "4.17.1"
+  spec.version       = "4.18.0"
   spec.authors       = ["Government Digital Service"]
   spec.email         = ["govuk-dev@digital.cabinet-office.gov.uk"]
 
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = Dir["config/**/*", "*.md"]
 
-  spec.required_ruby_version = ">= 3.0"
+  spec.required_ruby_version = ">= 3.1"
 
   spec.add_development_dependency "rake", "~> 13"
 
