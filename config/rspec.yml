@@ -51,3 +51,11 @@ RSpec/ContextWording:
     - without
     - and
     - but
+
+# Within GOV.UK we use Capybara test method syntax of feature,
+# scenario.
+# We don't want this cop outside of feature or system specs though.
+RSpec/Dialect:
+  Exclude:
+    - 'spec/features/**/*.rb'
+    - 'spec/system/**/*.rb'
