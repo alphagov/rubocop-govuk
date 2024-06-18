@@ -56,6 +56,15 @@ RSpec/ContextWording:
 # scenario.
 # We don't want this cop outside of feature or system specs though.
 RSpec/Dialect:
+  # Disables all Capybara-specific methods that have the same native 
+  # RSpec method (e.g. are just aliases)
+  PreferredMethods:
+    background: :before
+    scenario:   :it
+    xscenario:  :xit
+    given:      :let
+    given!:     :let!
+    feature:    :describe
   Exclude:
     - 'spec/features/**/*.rb'
     - 'spec/system/**/*.rb'
