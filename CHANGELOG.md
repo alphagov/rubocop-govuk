@@ -1,3 +1,7 @@
+# 4.18.1
+
+* Update dependencies
+
 # 4.18.0
 
 * Drop support for Ruby 3.0
