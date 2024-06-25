@@ -4,9 +4,3 @@ require: rubocop-capybara
 # scenario. 
 Capybara:
   Enabled: true
-
-# We don't want this cop outside of feature or system specs though.
-RSpec/Dialect:
-  Exclude:
-    - 'spec/features/**/*.rb'
-    - 'spec/system/**/*.rb'
