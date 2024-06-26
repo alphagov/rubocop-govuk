@@ -31,6 +31,13 @@ RSpec/InstanceVariable:
     - 'spec/features/**/*.rb'
     - 'spec/system/**/*.rb'
 
+# The GOV.UK Feature spec style has expectations in method calls so this
+# cop falsely triggers.
+RSpec/NoExpectationExample:
+  Exclude:
+    - 'spec/features/**/*.rb'
+    - 'spec/system/**/*.rb'
+
 # In GOV.UK we quite often test that a class received a method.
 RSpec/MessageSpies:
   Enabled: false
@@ -56,7 +63,7 @@ RSpec/ContextWording:
 # scenario.
 # We don't want this cop outside of feature or system specs though.
 RSpec/Dialect:
-  # Disables all Capybara-specific methods that have the same native 
+  # Disables all Capybara-specific methods that have the same native
   # RSpec method (e.g. are just aliases)
   PreferredMethods:
     background: :before
