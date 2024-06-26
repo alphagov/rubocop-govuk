@@ -1,3 +1,7 @@
+# 5.0.1
+
+- Disable RSpec/NoExpectationExample for feature and system specs as it false triggers.
+
 # 5.0.0
 
 - BREAKING: Update rubocop-rspec to 3.0 which enables by default previously pending cops. See [rubocop-rspec's changelog](https://github.com/rubocop/rubocop-rspec/blob/master/CHANGELOG.md#300-2024-06-11) for details.
