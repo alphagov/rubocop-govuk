@@ -1,3 +1,7 @@
+# 5.0.2
+
+* Update dependencies
+
 # 5.0.1
 
 - Disable RSpec/NoExpectationExample for feature and system specs as it false triggers.
