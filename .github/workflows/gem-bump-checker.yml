@@ -4,6 +4,8 @@ on:
 
 jobs:
   gem-bump-checker:
-    uses: alphagov/govuk-infrastructure/.github/workflows/gem-bump-checker.yml@main
+    uses: alphagov/govuk-infrastructure/.github/workflows/gem-bump-checker.yml@gem-bump-improvement
     secrets:
       GH_TOKEN: ${{ secrets.GOVUK_CI_GITHUB_API_TOKEN }}
+    with:
+      ignored_files: '[".github/",".gitignore",".govuk_dependabot_merger.yml","CONTRIBUTING.md","LICENCE","README.md"]'
