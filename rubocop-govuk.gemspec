@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "rubocop-govuk"
-  spec.version       = "5.0.2"
+  spec.version       = "5.0.3"
   spec.authors       = ["Government Digital Service"]
   spec.email         = ["govuk-dev@digital.cabinet-office.gov.uk"]
 
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "rake", "~> 13"
 
-  spec.add_dependency "rubocop", "1.64.1"
+  spec.add_dependency "rubocop", "1.65.0"
   spec.add_dependency "rubocop-ast", "1.31.3"
   spec.add_dependency "rubocop-capybara", "2.21.0"
   spec.add_dependency "rubocop-rails", "2.25.1"
