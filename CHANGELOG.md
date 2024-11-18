@@ -1,3 +1,7 @@
+# 5.0.3
+
+* Update dependencies: rubocop from 1.64.1 to 1.68.0, rubocop-ast from 1.31.3 to 1.26.1, rubocop-rails from 2.25.1 to 2.27.0, rubocop-rspec from 3.0.1 to 3.2.0
+
 # 5.0.2
 
 * Update dependencies
