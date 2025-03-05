@@ -48,4 +48,4 @@ jobs:
           # preserve exit code if rubocop fails
           set -o pipefail
           # use tee to output to stdout and populate GitHub summary
-          bundle exec rubocop --format markdown | tee $GITHUB_STEP_SUMMARY
+          bundle exec rubocop --format markdown | tee "$GITHUB_STEP_SUMMARY"
