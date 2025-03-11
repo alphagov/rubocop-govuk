@@ -1,3 +1,7 @@
+# 5.0.10
+
+* Update dependencies
+
 # 5.0.9
 
 * Bump version to add Action Linting and Pass Ratchet check
