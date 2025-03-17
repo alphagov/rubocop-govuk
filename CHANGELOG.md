@@ -1,3 +1,8 @@
+# 5.1.0
+
+* Migrate to the plugin system
+* Update rubocop-ast from 1.38.1 to 1.39.0
+
 # 5.0.11
 
 * Update dependencies
