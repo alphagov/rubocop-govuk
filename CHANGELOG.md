@@ -1,3 +1,7 @@
+# 5.1.10
+
+* Update dependencies
+
 # 5.1.9
 
 * Configure CI workflow to handle concurrent releases ([#499](https://github.com/alphagov/rubocop-govuk/pull/499))
