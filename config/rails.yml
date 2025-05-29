@@ -92,3 +92,11 @@ Rails/SaveBang:
 # about whether we mean 'Time[.zone].now'.
 Rails/TimeZone:
   EnforcedStyle: "strict"
+
+# This rule to avoid using instance variables in helpers
+# is over aggressive and is catching helper tests and helpers specs
+# as well. Minitests that don't use the Rspec let convention need
+# instance variables to do the testing. Excluding them from the rule.
+Rails/HelperInstanceVariable:
+  Exclude:
+    - '**/*_test.rb'
