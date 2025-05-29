@@ -1,3 +1,7 @@
+# 5.1.11
+
+* Exclude `*_test.rb` files from being checked against HelperInstanceVariable rule as it is picking out helper test files as well. 
+
 # 5.1.10
 
 * Update dependencies
