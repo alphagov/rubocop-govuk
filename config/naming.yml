@@ -17,7 +17,7 @@ Naming/AccessorMethodName:
 # At the time of writing, this Cop is not auto-correctable, and
 # would generate a prohibitively high number of issues across our
 # repos, which would require manual intervention.
-Naming/PredicateName:
+Naming/PredicatePrefix:
   Enabled: false
 
 # This rule can cause readability issues when applied (for example
