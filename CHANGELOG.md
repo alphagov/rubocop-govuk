@@ -1,3 +1,7 @@
+# 5.1.16
+
+* Update dependencies
+
 # 5.1.15
 
 * Rename PredicateName cop to PredicatePrefix to address deprecation warning ([#511](https://github.com/alphagov/rubocop-govuk/pull/511))
