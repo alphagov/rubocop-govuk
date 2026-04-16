@@ -1,3 +1,6 @@
+# 5.2.1
+* Set dependency cooldowns in Dependabot
+
 # 5.2.0
 
 * Update dependencies
