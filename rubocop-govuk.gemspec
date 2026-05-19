@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rubocop", "1.86.0"
   spec.add_dependency "rubocop-ast", "1.49.1"
   spec.add_dependency "rubocop-capybara", "2.22.1"
-  spec.add_dependency "rubocop-rails", "2.34.3"
+  spec.add_dependency "rubocop-rails", "2.35.0"
   spec.add_dependency "rubocop-rake", "0.7.1"
   spec.add_dependency "rubocop-rspec", "3.9.0"
 end
