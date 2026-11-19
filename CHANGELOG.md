@@ -1,3 +1,8 @@
+# 6.0.0
+
+* BREAKING: Drop support for Ruby 3.1 and 3.2
+* Bump Ruby to 4.0.10
+
 # 5.2.1
 * Set dependency cooldowns in Dependabot
 
