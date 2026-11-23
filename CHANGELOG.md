@@ -1,3 +1,7 @@
+# 6.0.1
+
+* Update dependencies
+
 # 6.0.0
 
 * BREAKING: Drop support for Ruby 3.1 and 3.2
